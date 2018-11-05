@@ -1,0 +1,16 @@
+#about {
+	background-image: radial-gradient(#0A81D1, #050C33);
+	width: 100vw;
+
+	// #about-content {
+	// 	z-index: 200;
+	// }
+
+	#particles-js-about {
+		position: absolute;
+		width: 100vw;
+	}
+	#particles-js-about canvas {
+		z-index: -1;
+	}
+}
