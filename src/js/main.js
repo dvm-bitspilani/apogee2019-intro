@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let divs = [
         {
             id: "about",
-            gradient: "radial-gradient(#0A81D1, #050C33)",
+            background: "#0A81D1",
             fontColor: "#fff"
         },
         {
             id: "paperproject",
-            gradient: "radial-gradient(#FFF246, #EEDA5C)",
+            background: "#FFF246",
             fontColor: "#000B37"
         }
     ];
@@ -37,13 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // change background
         divs.map(div => {
             if(document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top/viewportHeight < 0.7) {
-                document.getElementById("container").style.backgroundImage = div.gradient;
+                document.getElementById("container").style.backgroundColor = div.background;
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
             }
             if(document.getElementById(div.id).getBoundingClientRect().top <=0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom/viewportHeight) > 0.7) {
-                document.getElementById("container").style.backgroundImage = div.gradient;
+                document.getElementById("container").style.backgroundColor = div.background;
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
             }
