@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-	particlesJS.load('particles-js-about', './static/particlesjs-config.json', function () {
-        console.log('callback - particles.js config loaded');
-    });
+    setParticles("about");
 
-    setParticlesHeight("about");
-    
-    function setParticlesHeight (divName) {
+    function setParticles(divName) {
         document.getElementById(divName + "-image").addEventListener("load", function () {
+
+            particlesJS.load('particles-js-' + divName, './static/particlesjs-config-' + divName + '.json', function () {
+                console.log('callback - particles.js config loaded for ' + divName);
+            });
+
             let height = document.getElementById(divName).clientHeight;
-            document.getElementById('particles-js-' + divName).style.height = height - 10+ "px";
-            let viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-            if((1.33*height) > viewportWidth)
-                document.getElementById('particles-js-' + divName).style.width = (1.33 * height) - 10 + "px";
+            console.log(height);
+            document.getElementById('particles-js-' + divName).style.height = height - 10 + "px";
         })
     }
 });
