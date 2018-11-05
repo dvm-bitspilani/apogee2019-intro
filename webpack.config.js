@@ -24,7 +24,7 @@ config = {
 				test: /\.js$/,
 				use: [
 					'babel-loader',
-					'eslint-loader'
+					//'eslint-loader'
 				],
 				exclude: [
 					/node_modules/
@@ -70,12 +70,11 @@ config = {
 	],
 }
 
-if (fs.existsSync(path.resolve(__dirname, "src", "static"))) {
+if(fs.existsSync(path.resolve(__dirname, "src", "static"))) {
 	config.plugins.push(
 		new CopyWebpackPlugin([
 			{ from: 'src/static', to: 'static' }
 		]),
 	);
 }
-
 module.exports = config
