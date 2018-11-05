@@ -2,12 +2,15 @@
   "name": "oasis-2018-intro",
   "version": "1.0.0",
   "description": "Oasis intro site",
+  "homepage": "https://dvm-bitspilani.github.io/apogee2018-intro/",
   "private": true,
   "scripts": {
     "start": "node ./node_modules/.bin/webpack-dev-server --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./node_modules/.bin/webpack --display-modules --config webpack.prod.config.js",
-    "watch": "node ./node_modules/.bin/webpack --watch --config webpack.prod.config.js"
+    "watch": "node ./node_modules/.bin/webpack --watch --config webpack.prod.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,6 @@
   "bugs": {
     "url": "https://github.com/dvm-bitspilani/oasis-2018-intro/issues"
   },
-  "homepage": "https://github.com/dvm-bitspilani/oasis-2018-intro#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -48,10 +50,11 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "promise.prototype.finally": "^3.1.0",
     "autoprefixer": "^9.1.0",
+    "axios": "^0.18.0",
     "es6-promise": "^4.2.4",
-    "postcss": "^7.0.2"
+    "gh-pages": "^2.0.1",
+    "postcss": "^7.0.2",
+    "promise.prototype.finally": "^3.1.0"
   }
 }

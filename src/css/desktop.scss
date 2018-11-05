@@ -9,6 +9,7 @@
     align-items: center;
     width: 100vw;
     box-sizing: border-box;
+    z-index: 99;
 
     #nav-logo {
         #apogee-logo {
@@ -42,6 +43,7 @@
     width: 100vw;
     box-sizing: border-box;
     font-size: 1.2em;
+    z-index: 99;
 
     #scroll-icon {
         max-height: 30px;
