@@ -10,13 +10,13 @@ config = {
 	//entry: path.resolve(__dirname, "src/js/index.js"), 
 	entry: path.resolve(__dirname, "src", "js", "index.js"),
 	output: {
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "build"),
 		filename: "bundle.js",
 	},
 	devtool: 'inline-source-map',
 	mode: 'development',
 	devServer: {
-		contentBase: './dist',
+		contentBase: './build',
 	},
 	module: {
 		rules: [
@@ -62,7 +62,7 @@ config = {
 		],
 	},
 	plugins: [
-		//new CleanWebpackPlugin(['dist']),
+		//new CleanWebpackPlugin(['build']),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, "src", "index.html"),
 			inject: 'body'
