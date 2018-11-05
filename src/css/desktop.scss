@@ -1,0 +1,19 @@
+#navbar {
+    position: fixed;
+    display: flex;
+    color: #fff;
+    padding: 20px 25px;
+    justify-content: space-between;
+    align-items: center;
+    
+    #nav-content {
+        span {
+            margin-right: 20px;
+            font-size: 1.2em;
+        }
+    }
+}
+
+#footer {
+
+}
