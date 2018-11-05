@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+#particles-js {
+    height: 1000px;
+    width: 100vw;
+}
