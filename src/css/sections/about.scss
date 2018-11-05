@@ -2,13 +2,32 @@
 	background-image: radial-gradient(#0A81D1, #050C33);
 	width: 100vw;
 
-	// #about-content {
-	// 	z-index: 200;
-	// }
+	#about-content {
+		display: flex;
+	}
+
+	#about-image-container{
+		height: 100%;	
+	}
+	#about-text-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		color: white;
+
+		h2 {
+			font-size: 43px;	
+		}
+		p {
+			line-height: 1.5;	
+		}
+	}
 
 	#particles-js-about {
 		position: absolute;
 		width: 100vw;
+		display: none;
 	}
 	#particles-js-about canvas {
 		z-index: -1;
