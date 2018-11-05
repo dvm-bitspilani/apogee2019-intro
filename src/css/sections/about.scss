@@ -1,12 +1,45 @@
 #about {
 	background-image: radial-gradient(#0A81D1, #050C33);
 	width: 100vw;
+<<<<<<< HEAD
 	position: relative;
+=======
+
+	#about-content {
+		display: flex;
+	}
+
+	#about-image-container{
+		height: 100%;	
+	}
+	#about-text-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		color: white;
+
+		h2 {
+			font-size: 43px;	
+		}
+		p {
+			line-height: 1.5;	
+		}
+	}
+>>>>>>> e47bafc617f05c9f753a2c5b29b645e1f2368e10
 
 	#particles-js-about {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100vw;
+		display: none;
+	}
+<<<<<<< HEAD
+}
+=======
+	#particles-js-about canvas {
+		z-index: -1;
 	}
 }
+>>>>>>> e47bafc617f05c9f753a2c5b29b645e1f2368e10
