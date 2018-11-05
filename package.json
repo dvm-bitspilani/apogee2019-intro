@@ -1,0 +1,59 @@
+{
+  "name": "oasis-2018-intro",
+  "version": "1.0.0",
+  "description": "Oasis intro site",
+  "private": true,
+  "scripts": {
+    "start": "node ./node_modules/.bin/webpack-dev-server --host 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/.bin/webpack --display-modules --config webpack.prod.config.js",
+    "watch": "node ./node_modules/.bin/webpack --watch --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvm-bitspilani/oasis-2018-intro.git"
+  },
+  "keywords": [
+    "Oasis",
+    "2018",
+    "DVM",
+    "BITS",
+    "Intro Site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvm-bitspilani/oasis-2018-intro/issues"
+  },
+  "homepage": "https://github.com/dvm-bitspilani/oasis-2018-intro#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "caniuse-lite": "^1.0.30000874",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.1.0",
+    "eslint-loader": "^2.0.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "htmllint-loader": "^2.1.4",
+    "node-sass": "^4.9.2",
+    "postcss-loader": "^2.1.6",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "promise.prototype.finally": "^3.1.0",
+    "autoprefixer": "^9.1.0",
+    "es6-promise": "^4.2.4",
+    "postcss": "^7.0.2"
+  }
+}
