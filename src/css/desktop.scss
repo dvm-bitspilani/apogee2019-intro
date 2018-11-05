@@ -1,19 +1,63 @@
 #navbar {
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     color: #fff;
     padding: 20px 25px;
     justify-content: space-between;
     align-items: center;
-    
+    width: 100vw;
+    box-sizing: border-box;
+
+    #nav-logo {
+        #apogee-logo {
+            max-height: 40px;
+        }
+    }
+
     #nav-content {
+        display: flex;
+        align-items: center;
+        
         span {
-            margin-right: 20px;
+            margin-right: 40px;
             font-size: 1.2em;
+        }
+        #hamburger {
+            max-height: 20px;
         }
     }
 }
 
 #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    color: #fff;
+    padding: 20px 25px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 1.2em;
 
+    #scroll-icon {
+        max-height: 30px;
+    }
+    #social-icons {
+        a {
+            margin-right: 20px;
+            text-decoration: none;
+            cursor: pointer;
+
+            img {
+                max-height: 25px;
+            }
+        }
+        a:last-child {
+            margin-right: 0;
+        }
+    }
 }
