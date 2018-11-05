@@ -1,3 +1,4 @@
 import '../css'
-import './particles.js'
-import './main.js'
+import './particles'
+import './rellax'
+import './main'
