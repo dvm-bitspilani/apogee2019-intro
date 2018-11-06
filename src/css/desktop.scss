@@ -1,3 +1,11 @@
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
 #navbar {
     position: fixed;
     top: 0;
@@ -64,12 +72,4 @@
             margin-right: 0;
         }
     }
-}
-
-.desktop-only {
-  display: block;
-}
-
-.mobile-only {
-  display: none;
 }

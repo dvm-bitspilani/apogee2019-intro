@@ -16,12 +16,67 @@ body {
 	overflow-x: hidden;
 }
 
-#container {
+// #container {
+//     background-color: #0A81D1;
+//     transition: background-color ease-in-out 0.2s;
+// }
+
+#main-content-container, #main-image-container, #main-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+#main-image-container, #main-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-image-container {
     background-color: #0A81D1;
     transition: background-color ease-in-out 0.2s;
+    z-index: 2;
+}
+
+#main-text-container {
+  z-index: 3;
 }
 
 #nav-content {
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
+}
+
+#particles-js-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45vw;
+  color: white;
+
+  h2 {
+    font-size: 4.4em;
+    margin-bottom: 40px;
+    font-family: 'futurist', sans-serif;
+  }
+  p {
+    line-height: 1.7;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+}
+
+.image-container img {
+  width: auto;
+  height: auto;
 }

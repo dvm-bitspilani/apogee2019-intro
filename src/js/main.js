@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // on scroll event
     let divs = [
         {
-            id: "about",
+            id: "about-image-container",
             background: "#0A81D1",
             fontColor: "#fff"
         },
         {
-            id: "paperproject",
+            id: "paperproject-image-container",
             background: "#FFF246",
             fontColor: "#000B37"
         }
@@ -37,13 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // change background
         divs.map(div => {
             if(document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top/viewportHeight < 0.7) {
-                document.getElementById("container").style.backgroundColor = div.background;
+                document.getElementById("main-image-container").style.backgroundColor = div.background;
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
             }
             if(document.getElementById(div.id).getBoundingClientRect().top <=0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom/viewportHeight) > 0.7) {
-                document.getElementById("container").style.backgroundColor = div.background;
+                document.getElementById("main-image-container").style.backgroundColor = div.background;
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
             }
