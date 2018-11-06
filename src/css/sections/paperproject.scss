@@ -33,28 +33,27 @@
 // }
 
 #paperproject-image-container {
-  align-self: flex-end;
+  align-self: center;
 
   img {
-    max-width: 67vw;
-    // max-height: 120vh;
+    max-width: 170vw;
   }
 }
 
 	#paperproject-text-container{
     color: #172148;
-    margin: 25vh 0 25vh 5vw;
+    margin: 15vh 0 25vh 5vw;
 
     h2 {
-			font-size: 3em;
+			font-size: 1.3em;
       margin-bottom: 40px;
       font-family: 'futurist', sans-serif;
 		}
 
     p {
-			line-height: 1.7;
+			line-height: 1.1;
       font-family: 'Overpass', sans-serif;
-      font-weight: 300;
-      font-size: 1.3em;
+      font-weight: 400;
+      font-size: 1.2em;
 		}
 	}

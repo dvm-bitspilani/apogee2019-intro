@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             id: "paperproject-image-container",
-            background: "#FFF246",
+            background: "#faeb4c",
             fontColor: "#000B37"
         }
     ];

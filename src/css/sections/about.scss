@@ -50,3 +50,17 @@
   align-self: flex-end;
   margin: 25vh 10vw 45vh 0;
 }
+
+@media all and (max-width: 1300px) {
+  #about-text-container {
+    h2 {
+      font-size: 3.4em;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+}
