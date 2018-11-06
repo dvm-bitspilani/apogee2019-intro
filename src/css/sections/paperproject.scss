@@ -19,10 +19,15 @@
 		flex-direction: column;
 		padding-left: 50px;
 		h2 {
-			font-size: 43px;	
+			font-size: 3em;
+      margin-bottom: 40px;
+      font-family: 'futurist', sans-serif;
 		}
 		p {
-			line-height: 1.5;	
+			line-height: 1.7;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 300;
+      font-size: 1.3em;
 		}
 	}
 }

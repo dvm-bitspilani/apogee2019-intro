@@ -9,7 +9,8 @@
 
 	#about-image-container{
 		height: 100%;	
-	}
+  }
+
 	#about-text-container{
 		display: flex;
 		flex-direction: column;
@@ -19,10 +20,15 @@
 		padding-top: 60px;
 
 		h2 {
-			font-size: 43px;	
+      font-size: 4em;
+      margin-bottom: 40px;
+      font-family: 'futurist', sans-serif;
 		}
 		p {
-			line-height: 1.5;	
+      line-height: 1.7;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 300;
+      font-size: 1.3em;
 		}
 	}
 
