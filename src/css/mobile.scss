@@ -1,4 +1,4 @@
-@media all and (max-width: 960px) {
+@media all and (max-width: 1300px) {
   .desktop-only {
     display: none;
   }
@@ -45,4 +45,15 @@
   //     }
   //   }
   // }
+
+  .image-container {
+    opacity: 0.42;
+  }
+
+  .text-container {
+    align-self: center !important;
+    width: 85vw;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
 }
