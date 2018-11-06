@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>APOGEE 2019 | The Reality Roulette</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,700" rel="stylesheet">  -->
 </head>
 
 <body>
@@ -14,18 +16,19 @@
             <div id="nav-logo">
                 <img src="images/apogee-logo.png" alt="APOGEE 2019" id="apogee-logo" /> </div>
             <div id="nav-content">
-                <span>ABOUT</span>
-                <span>CONTACT</span>
-                <span>PAST SPONSORS</span>
+                <span class = "desktop-only">ABOUT</span>
+                <span class = "desktop-only">CONTACT</span>
+                <span class = "desktop-only">PAST SPONSORS</span>
+                <span class = "mobile-only">MENU</span>
                 <img src="./images/hamburger.png" alt="Menu" id="hamburger" />
             </div>
         </div>
         <div id="footer">
-            <div>
+            <div class = "desktop-only">
                 <span id="days-count"></span> days to go
             </div>
-            <img src="./images/scroll-icon.png" alt="Scroll" id="scroll-icon" />
-            <div id="social-icons">
+            <img src="./images/scroll-icon.png" alt="Scroll" id="scroll-icon" class = "desktop-only"/>
+            <div id="social-icons" class = "desktop-only">
                 <a href="#">
                     <img src="./images/fb-icon.png" alt="Facebook" />
                 </a>
@@ -36,23 +39,26 @@
                     <img src="./images/twitter-icon.png" alt="Twitter" />
                 </a>
             </div>
+            <div class = "mobile-only">
+              <span>SCROLL FOR MORE</span>
+            </div>
         </div>
-        <div id="about">
+        <div id="about" class = "page">
             <div id="particles-js-about"></div>
             <div id="about-content">
                 <div id="about-image-container">
                     <img src="imgs/about-main.png" alt="About" id="about-image" class="rellax" data-rellax-speed="4">
                 </div>
-                <div id="about-text-container">
+                <div id="about-text-container" class = "text-container">
 					<h2>ABOUT</h2>
 					<p>So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper. Instrument melancholy in acceptance collecting frequently be if. Zealously now pronounce existence add you instantly say offending. Merry their far had widen was. Concerns no in expenses raillery formerly.</p>
 				</div>
             </div>
         </div>
-		<div id="paperproject">
+		<div id="paperproject" class = "page">
             <div id="particles-js-paperproject"></div>
 			<div id="paperproject-content">
-				<div id="paperproject-text-container">
+				<div id="paperproject-text-container" class = "text-container">
 					<h2>PAPER AND PROJECT PRESENTATION</h2>
 					<p>So insisted received is occasion advanced honoured. Among ready to which up. Attacks smiling and may out assured moments man nothing outward. Thrown any behind afford either the set depend one temper. Instrument melancholy in acceptance collecting frequently be if. Zealously now pronounce existence add you instantly say offending. Merry their far had widen was. Concerns no in expenses raillery formerly.</p>
 				
