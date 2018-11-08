@@ -33,16 +33,17 @@
 // }
 
 #paperproject-image-container {
-  align-self: center;
+  align-self: flex-end;
 
   img {
-    max-width: 170vw;
+    height: 120vh;
   }
 }
 
 	#paperproject-text-container{
     color: #172148;
-    margin: 15vh 0 25vh 5vw;
+    margin-left: 5vw;
+    height: 100vh;
 
     h2 {
 			font-size: 1.3em;

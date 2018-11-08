@@ -41,14 +41,18 @@
 // 	}
 // }
 
-#about-image-container img {
-  min-width: 47vw;
-  min-height: 120vh;
+#about-image-container {
+  margin-bottom: 30vh;
+
+  img {
+    height: 120vh;
+  }
 }
 
 #about-text-container{
   align-self: flex-end;
-  margin: 25vh 10vw 45vh 0;
+  margin-right: 10vw;
+  height: 100vh;
 }
 
 @media all and (max-width: 1300px) {
