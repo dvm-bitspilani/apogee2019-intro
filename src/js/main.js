@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
             background: "#faeb4c",
             fontColor: "#000B37",
             name: "paperproject"
+        },
+        {
+            id: "teaser-image-container",
+            background: "#fafafa",
+            fontColor: "#172148",
+            name: "teaser"
         }
     ];
 

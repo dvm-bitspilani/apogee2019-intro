@@ -41,18 +41,9 @@
 // 	}
 // }
 
-#about-image-container {
-  margin-bottom: 30vh;
-
-  img {
-    height: 120vh;
-  }
-}
-
 #about-text-container{
   align-self: flex-end;
   margin-right: 10vw;
-  height: 100vh;
 }
 
 @media all and (max-width: 1300px) {
