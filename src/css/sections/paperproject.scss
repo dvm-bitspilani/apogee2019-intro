@@ -33,27 +33,29 @@
 // }
 
 #paperproject-image-container {
-  align-self: center;
+  align-self: flex-end;
+}
 
-  img {
-    max-width: 170vw;
+#paperproject-text-container{
+  color: #172148;
+  margin-left: 5vw;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'futurist', sans-serif;
+  }
+
+  p {
+    line-height: 1.5;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
   }
 }
 
-	#paperproject-text-container{
-    color: #172148;
-    margin: 15vh 0 25vh 5vw;
-
-    h2 {
-			font-size: 1.3em;
-      margin-bottom: 40px;
-      font-family: 'futurist', sans-serif;
-		}
-
-    p {
-			line-height: 1.1;
-      font-family: 'Overpass', sans-serif;
-      font-weight: 400;
-      font-size: 1.2em;
-		}
-	}
+@media all and (max-width: 1300px) {
+  #paperproject-image-container {
+    align-self: center;
+  }
+}

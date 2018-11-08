@@ -65,6 +65,8 @@ body {
   justify-content: center;
   width: 45vw;
   color: white;
+  height: 100vh;
+  margin-bottom: 15vh;
 
   h2 {
     font-size: 4.4em;
@@ -79,9 +81,12 @@ body {
   }
 }
 
-.image-container img {
-  width: auto;
-  height: auto;
+.image-container {
+  padding-bottom: 15vh;
+
+  img {
+    height: 120vh;
+  }
 }
 
 #menu {
