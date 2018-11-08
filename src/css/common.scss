@@ -9,7 +9,7 @@
 
 html, body {
 	height: 100%;
-	width: 100%;
+	width: 100vw;
 }
 
 body {
@@ -31,6 +31,7 @@ body {
 #main-image-container, #main-text-container {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #main-image-container {
