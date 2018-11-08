@@ -1,3 +1,9 @@
 #teaser-image-container {
   align-self: flex-end;
 }
+
+@media all and (max-width: 1000px) {
+  #teaser-image-container {
+    align-self: center;
+  }
+}

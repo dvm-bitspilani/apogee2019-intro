@@ -18,10 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "about"
         },
         {
+            id: "events-image-container",
+            background: "#37CC9C",
+            fontColor: "#ffffff",
+            name: "events"
+        },
+        {
+            id: "pastspeakers-image-container",
+            background: "#7D2DC7",
+            fontColor: "#ffffff",
+            name: "pastspeakers"
+        },
+        {
             id: "paperproject-image-container",
             background: "#faeb4c",
             fontColor: "#000B37",
             name: "paperproject"
+        },
+        {
+            id: "ambassador-image-container",
+            background: "#F1356B",
+            fontColor: "#ffffff",
+            name: "ambassador"
         },
         {
             id: "teaser-image-container",
