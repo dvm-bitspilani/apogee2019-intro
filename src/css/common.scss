@@ -9,8 +9,12 @@
 
 html, body {
 	height: 100%;
+<<<<<<< HEAD
   width: 100%;
   background: #000;
+=======
+	width: 100vw;
+>>>>>>> 2c6f4d1bce5fe91920d7348b4d062af43f493ab7
 }
 
 body {
@@ -32,6 +36,7 @@ body {
 #main-image-container, #main-text-container {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #main-image-container {
