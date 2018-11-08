@@ -35,8 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 0);
     });
 
-    let currDiv = null;
-
     function scrollHandler() {
         // change background
         divs.map(div => {
@@ -45,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
-                if (!currDiv)
-                    currDiv = div.name;
+
+                // change particles
                 let particles = document.getElementsByClassName("particles-js");
                 for (let i = 0; i < particles.length; i++) {
                     if (particles[i].id.split('-')[2] !== div.name) {
@@ -55,13 +53,16 @@ document.addEventListener("DOMContentLoaded", function () {
                         particles[i].style.opacity = 1;
                     }
                 }
+
+                // change color for menu
+                // document.getElementById("menu").style.color = div.fontColor;
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
                 document.getElementById("main-image-container").style.backgroundColor = div.background;
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
-                if (!currDiv)
-                    currDiv = div.name;
+
+                // change particles
                 let particles = document.getElementsByClassName("particles-js");
                 for (let i = 0; i < particles.length; i++) {
                     if (particles[i].id.split('-')[2] !== div.name) {
@@ -70,11 +71,36 @@ document.addEventListener("DOMContentLoaded", function () {
                         particles[i].style.opacity = 1;
                     }
                 }
-                // document.getElementById("particles-js-"+currDiv).style.opacity = 0;
-                // document.getElementById("particles-js-"+div.name).style.opacity = 1;
+
+                // change color for menu
+                // document.getElementById("menu").style.color = div.fontColor;
             }
         })
     }
 
-    scrollHandler();
+    // scrollHandler();
+
+    // on nav hamburger click
+    document.getElementById("hamburger").onclick = function () {
+        document.getElementById("container").style.filter = "blur(20px)";
+        document.getElementById("menu").style.display = "flex";
+        document.getElementById("menu").style.opacity = 1;
+    }
+
+    // on menu cross click
+    document.getElementById("menu-cross").onclick = function () {
+        document.getElementById("container").style.filter = "blur(0px)";
+        document.getElementById("menu").style.opacity = 0;
+        document.getElementById("menu").style.display = "none";
+    }
+
+    // on menu item span click
+    let items = document.getElementsByClassName("menu-item");
+    for (let i = 0; i < items.length; i++) {
+        items[i].onclick = function () {
+            document.getElementById("container").style.filter = "blur(0px)";
+            document.getElementById("menu").style.opacity = 0;
+            document.getElementById("menu").style.display = "none";
+        }
+    }
 });
