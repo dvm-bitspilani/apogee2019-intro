@@ -66,7 +66,7 @@ body {
   width: 45vw;
   color: white;
   height: 100vh;
-  margin-bottom: 15vh;
+  margin-bottom: 20vh;
 
   h2 {
     font-size: 4.4em;
@@ -83,7 +83,9 @@ body {
 
 .image-container {
   padding-bottom: 15vh;
-  min-height: 100vh;
+  // min-height: 100vh;
+  // max-height: 120vh;
+  height: 120vh;
 
   img {
     height: 120vh;

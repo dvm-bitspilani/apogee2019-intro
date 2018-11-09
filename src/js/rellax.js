@@ -1,1 +1,1 @@
-const rellax = new Rellax('.rellax');
+// const rellax = new Rellax('.rellax');
