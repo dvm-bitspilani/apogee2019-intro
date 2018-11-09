@@ -12,6 +12,12 @@ let slideSections = {
     menuLink: "events-menu-link",
     name: "events"
   },
+  pastsponsors: {
+    id: "pastsponsors-image-container",
+    link: "pastsponsors-link",
+    menuLink: "pastsponsors-menu-link",
+    name: "pastsponsors"
+  },
   pastspeakers: {
     id: "pastspeakers-image-container",
     menuLink: "pastspeakers-menu-link",
@@ -19,7 +25,7 @@ let slideSections = {
   },
   paperproject: {
     id: "paperproject-image-container",
-    menuLink: "",
+    menuLink: "paperproject-menu-link",
     name: "paperproject"
   },
   ambassador: {
@@ -31,6 +37,12 @@ let slideSections = {
     id: "teaser-image-container",
     menuLink: "",
     name: "teaser"
+  },
+  contact: {
+    id: "contact-image-container",
+    link: "contact-link",
+    menuLink: "contact-menu-link",
+    name: "contact"
   }
 }
 

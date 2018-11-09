@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "events"
         },
         {
+            id: "pastsponsors-image-container",
+            background: "#4E4E4E",
+            fontColor: "#ffffff",
+            name: "pastsponsors"
+        },
+        {
             id: "pastspeakers-image-container",
             background: "#7D2DC7",
             fontColor: "#ffffff",
@@ -46,6 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
             background: "#fafafa",
             fontColor: "#172148",
             name: "teaser"
+        },
+        {
+            id: "contact-image-container",
+            background: "#000313",
+            fontColor: "#ffffff",
+            name: "contact"
         }
     ];
 
