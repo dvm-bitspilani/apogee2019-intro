@@ -106,25 +106,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // on nav hamburger click
     document.getElementById("hamburger").onclick = function () {
-        document.getElementById("container").style.filter = "blur(20px)";
-        document.getElementById("menu").style.display = "flex";
-        document.getElementById("menu").style.opacity = 1;
+      document.getElementById("menu").style.display = "flex";
+      setTimeout(
+        function () {
+          document.getElementById("container").style.filter = "blur(20px)";
+            document.getElementById("menu").style.opacity = 1;
+        },
+        100
+      );
     }
 
     // on menu cross click
     document.getElementById("menu-cross").onclick = function () {
-        document.getElementById("container").style.filter = "blur(0px)";
-        document.getElementById("menu").style.opacity = 0;
-        document.getElementById("menu").style.display = "none";
+      document.getElementById("container").style.filter = "none";
+      document.getElementById("menu").style.opacity = 0;
+      setTimeout(
+        function () {
+          document.getElementById("menu").style.display = "none";
+        },
+        100
+      );
     }
 
     // on menu item span click
     let items = document.getElementsByClassName("menu-item");
     for (let i = 0; i < items.length; i++) {
         items[i].onclick = function () {
-            document.getElementById("container").style.filter = "blur(0px)";
-            document.getElementById("menu").style.opacity = 0;
-            document.getElementById("menu").style.display = "none";
+          document.getElementById("container").style.filter = "none";
+          document.getElementById("menu").style.opacity = 0;
+          setTimeout(
+            function () {
+              document.getElementById("menu").style.display = "none";
+            },
+            100
+          );
         }
     }
 });
