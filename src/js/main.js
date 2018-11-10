@@ -15,49 +15,57 @@ document.addEventListener("DOMContentLoaded", function () {
             id: "about-image-container",
             background: "#0A81D1",
             fontColor: "#fff",
-            name: "about"
+            name: "about",
+            particlesColor: "#ffffff"
         },
         {
             id: "events-image-container",
             background: "#37CC9C",
             fontColor: "#ffffff",
-            name: "events"
+            name: "events",
+            particlesColor: "#ffffff"
         },
         {
             id: "pastsponsors-image-container",
             background: "#4E4E4E",
             fontColor: "#ffffff",
-            name: "pastsponsors"
+            name: "pastsponsors",
+            particlesColor: "#ffffff"
         },
         {
             id: "pastspeakers-image-container",
             background: "#7D2DC7",
             fontColor: "#ffffff",
-            name: "pastspeakers"
+            name: "pastspeakers",
+            particlesColor: "#ffffff"
         },
         {
             id: "paperproject-image-container",
             background: "#faeb4c",
             fontColor: "#000B37",
-            name: "paperproject"
+            name: "paperproject",
+            particlesColor: "#000B37"
         },
         {
             id: "ambassador-image-container",
             background: "#F1356B",
             fontColor: "#ffffff",
-            name: "ambassador"
+            name: "ambassador",
+            particlesColor: "#ffffff"
         },
         {
             id: "teaser-image-container",
             background: "#fafafa",
             fontColor: "#172148",
-            name: "teaser"
+            name: "teaser",
+            particlesColor: "#172148"
         },
         {
             id: "contact-image-container",
             background: "#000313",
             fontColor: "#ffffff",
-            name: "contact"
+            name: "contact",
+            particlesColor: "#ffffff"
         }
     ];
 
@@ -81,31 +89,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("footer").style.color = div.fontColor;
 
                 // change particles
-                let particles = document.getElementsByClassName("particles-js");
-                for (let i = 0; i < particles.length; i++) {
-                    if (particles[i].id.split('-')[2] !== div.name) {
-                        particles[i].style.opacity = 0;
-                    } else {
-                        particles[i].style.opacity = 1;
-                    }
+                if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
+                    pJSDom[0].pJS.particles.color.value = div.particlesColor;
+                    pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
+                    pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
                 // change color for menu
                 // document.getElementById("menu").style.color = div.fontColor;
             }
-            if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
+            if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
                 document.getElementById("main-image-container").style.backgroundColor = div.background;
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
 
                 // change particles
-                let particles = document.getElementsByClassName("particles-js");
-                for (let i = 0; i < particles.length; i++) {
-                    if (particles[i].id.split('-')[2] !== div.name) {
-                        particles[i].style.opacity = 0;
-                    } else {
-                        particles[i].style.opacity = 1;
-                    }
+                console.log(pJSDom[0].pJS.particles.color.value, div.particlesColor);
+                if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
+                    pJSDom[0].pJS.particles.color.value = div.particlesColor;
+                    pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
+                    pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
                 // change color for menu
@@ -118,40 +121,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // on nav hamburger click
     document.getElementById("hamburger").onclick = function () {
-      document.getElementById("menu").style.display = "flex";
-      setTimeout(
-        function () {
-          document.getElementById("container").style.filter = "blur(20px)";
-            document.getElementById("menu").style.opacity = 1;
-        },
-        100
-      );
+        document.getElementById("menu").style.display = "flex";
+        setTimeout(
+            function () {
+                document.getElementById("container").style.filter = "blur(20px)";
+                document.getElementById("menu").style.opacity = 1;
+            },
+            100
+        );
     }
 
     // on menu cross click
     document.getElementById("menu-cross").onclick = function () {
-      document.getElementById("container").style.filter = "none";
-      document.getElementById("menu").style.opacity = 0;
-      setTimeout(
-        function () {
-          document.getElementById("menu").style.display = "none";
-        },
-        100
-      );
+        document.getElementById("container").style.filter = "none";
+        document.getElementById("menu").style.opacity = 0;
+        setTimeout(
+            function () {
+                document.getElementById("menu").style.display = "none";
+            },
+            100
+        );
     }
 
     // on menu item span click
     let items = document.getElementsByClassName("menu-item");
     for (let i = 0; i < items.length; i++) {
         items[i].onclick = function () {
-          document.getElementById("container").style.filter = "none";
-          document.getElementById("menu").style.opacity = 0;
-          setTimeout(
-            function () {
-              document.getElementById("menu").style.display = "none";
-            },
-            100
-          );
+            document.getElementById("container").style.filter = "none";
+            document.getElementById("menu").style.opacity = 0;
+            setTimeout(
+                function () {
+                    document.getElementById("menu").style.display = "none";
+                },
+                100
+            );
         }
     }
 });
