@@ -22,7 +22,7 @@
 
     #nav-logo {
         #apogee-logo {
-            max-height: 40px;
+            // max-height: 40px;
         }
     }
 
@@ -36,7 +36,8 @@
             cursor: pointer;
         }
         #hamburger {
-            max-height: 20px;
+            height: 20px;
+            width: 24.5px;
             cursor: pointer;
         }
     }

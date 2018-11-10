@@ -77,20 +77,23 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function (e) {
         if (scrollTimer) { clearTimeout(scrollTimer); }
         scrollTimer = setTimeout(function () {
-            scrollHandler();
+            if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > MOBILE_WIDTH) {
+                desktopScrollHandler();
+            } else {
+                mobileScrollHandler();
+            }
         }, 0);
     });
 
-    function scrollHandler() {
+    function desktopScrollHandler() {
         // change background
         divs.map(div => {
             if (document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top / viewportHeight < 0.7) {
-                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > MOBILE_WIDTH) {
-                    document.getElementById("main-image-container").style.backgroundColor = div.background;
-                    // change font color for navbar and footer
-                    document.getElementById("navbar").style.color = div.fontColor;
-                    document.getElementById("footer").style.color = div.fontColor;
-                }
+                document.getElementById("main-image-container").style.backgroundColor = div.background;
+
+                // change font color for navbar and footer
+                document.getElementById("navbar").style.color = div.fontColor;
+                document.getElementById("footer").style.color = div.fontColor;
 
                 // change particles
                 if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
@@ -102,13 +105,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change color for menu
                 document.getElementById("menu").style.color = div.fontColor;
                 document.getElementById("menu").style.background = div.background;
+
+                // change colors of svg like apogee logo
+                svgColorHandler("apogee-logo", div.fontColor);
+                svgColorHandler("hamburger", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
-                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > MOBILE_WIDTH) {
-                    document.getElementById("main-image-container").style.backgroundColor = div.background;
-                    document.getElementById("navbar").style.color = div.fontColor;
-                    document.getElementById("footer").style.color = div.fontColor;
-                }
+                document.getElementById("main-image-container").style.backgroundColor = div.background;
+
+                // change font color for navbar and footer
+                document.getElementById("navbar").style.color = div.fontColor;
+                document.getElementById("footer").style.color = div.fontColor;
 
                 // change particles
                 // console.log(pJSDom[0].pJS.particles.color.value, div.particlesColor);
@@ -121,6 +128,57 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change color for menu
                 document.getElementById("menu").style.color = div.fontColor;
                 document.getElementById("menu").style.background = div.background;
+
+                // change colors of svg like apogee logo
+                svgColorHandler("apogee-logo", div.fontColor);
+                svgColorHandler("hamburger", div.fontColor);
+            }
+        })
+    }
+
+    function mobileScrollHandler () {
+        // change background
+        divs.map(div => {
+            if (document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top / viewportHeight < 0.2) {
+                // change font color for navbar and footer
+                document.getElementById("navbar").style.color = div.fontColor;
+                document.getElementById("footer").style.color = div.fontColor;
+
+                // change particles
+                if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
+                    pJSDom[0].pJS.particles.color.value = div.particlesColor;
+                    pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
+                    pJSDom[0].pJS.fn.particlesRefresh();
+                }
+
+                // change color for menu
+                document.getElementById("menu").style.color = div.fontColor;
+                document.getElementById("menu").style.background = div.background;
+
+                // change colors of svg like apogee logo
+                svgColorHandler("apogee-logo", div.fontColor);
+                svgColorHandler("hamburger", div.fontColor);
+            }
+            if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.2) {
+                // change font color for navbar and footer
+                document.getElementById("navbar").style.color = div.fontColor;
+                document.getElementById("footer").style.color = div.fontColor;
+
+                // change particles
+                // console.log(pJSDom[0].pJS.particles.color.value, div.particlesColor);
+                if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
+                    pJSDom[0].pJS.particles.color.value = div.particlesColor;
+                    pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
+                    pJSDom[0].pJS.fn.particlesRefresh();
+                }
+
+                // change color for menu
+                document.getElementById("menu").style.color = div.fontColor;
+                document.getElementById("menu").style.background = div.background;
+
+                // change colors of svg like apogee logo
+                svgColorHandler("apogee-logo", div.fontColor);
+                svgColorHandler("hamburger", div.fontColor);
             }
         })
     }
@@ -162,5 +220,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 100
             );
         }
+    }
+
+    // svg color change handler
+    function svgColorHandler(svgId, color) {
+        document.getElementById(svgId).getSVGDocument().getElementsByTagName("g")[0].style.fill = color;
     }
 });
