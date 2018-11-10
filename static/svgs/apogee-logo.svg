@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 33.359">
+  <defs>
+    <style>
+      #Group_18 {
+        fill: #fff;
+      }
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+      }
+
+      .cls-1 {
+        font-size: 16.5px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 4px;
+        letter-spacing: 0.165em;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Helvetica;
+      }
+
+      .cls-4 {
+        font-size: 8px;
+        letter-spacing: 0.25em;
+      }
+    </style>
+  </defs>
+  <g id="Group_18" data-name="Group 18" transform="translate(-51 -35)">
+    <text id="APOGEE_2019" data-name="APOGEE 2019" class="cls-1" transform="translate(94 53)"><tspan x="0" y="0">APOGEE 2019</tspan></text>
+    <g id="Group_2" data-name="Group 2" transform="translate(51 35)">
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-2" width="10.993" height="4.928" transform="translate(24.64 11.372)"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-2" width="10.993" height="4.928" transform="translate(24.64 17.058)"/>
+      <rect id="Rectangle_13" data-name="Rectangle 13" class="cls-2" width="10.993" height="4.928" transform="translate(12.509 17.058)"/>
+      <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-2" width="10.993" height="4.928" transform="translate(0 17.058)"/>
+      <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-2" width="10.993" height="4.928" transform="translate(18.575 22.744)"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-2" width="10.993" height="4.928" transform="translate(6.444 22.744)"/>
+      <rect id="Rectangle_11" data-name="Rectangle 11" class="cls-2" width="10.993" height="4.928" transform="translate(18.575 28.43)"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-2" width="10.993" height="4.928" transform="translate(12.509 11.372)"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-2" width="4.928" height="4.928" transform="translate(30.705 5.686)"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-2" width="4.928" height="4.928" transform="translate(30.705)"/>
+      <rect id="Rectangle_16" data-name="Rectangle 16" class="cls-2" width="4.928" height="4.928" transform="translate(0 22.744)"/>
+      <rect id="Rectangle_18" data-name="Rectangle 18" class="cls-2" width="4.928" height="4.928" transform="translate(6.065 11.372)"/>
+      <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-2" width="4.928" height="4.928" transform="translate(30.705 22.744)"/>
+      <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-2" width="4.928" height="4.928" transform="translate(30.705 28.43)"/>
+      <text id="th" class="cls-3" transform="translate(54 26)"><tspan x="0" y="0">th</tspan></text>
+      <text id="st" class="cls-3" transform="translate(116 26)"><tspan x="0" y="0">st</tspan></text>
+    </g>
+    <text id="_28_March_-_31_March" data-name="28 March - 31 March" class="cls-4" transform="translate(94 65)"><tspan x="0" y="0">28 March - 31 March</tspan></text>
+  </g>
+</svg>
