@@ -1,4 +1,8 @@
 @media all and (max-width: 1000px) {
+  * {
+    word-break: break-word;
+  }
+
   .desktop-only {
     display: none;
   }
@@ -47,7 +51,10 @@
   // }
 
   .image-container {
-    opacity: 0.42;
+    img {
+      opacity: 0.42;
+    }
+    min-width: 100vw;
   }
 
   .text-container {
@@ -62,5 +69,37 @@
     span {
       font-size: 1.3em;
     }
+  }
+
+  #about-image-container {
+    background: #0A81D1;
+  }
+
+  #events-image-container {
+    background: #37CC9C;
+  }
+
+  #pastsponsors-image-container {
+    background: #4E4E4E;
+  }
+
+  #pastspeakers-image-container {
+    background: #7D2DC7;
+  }
+
+  #paperproject-image-container {
+    background: #faeb4c;
+  }
+
+  #ambassador-image-container {
+    background: #F1356B;
+  }
+
+  #teaser-image-container {
+    background: #fafafa;
+  }
+
+  #contact-image-container {
+    background: #000313;
   }
 }

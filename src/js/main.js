@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // when does mobile styling start
+    const MOBILE_WIDTH = 1000;
 
     // set days left
     let currentDate = new Date();
@@ -83,10 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // change background
         divs.map(div => {
             if (document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top / viewportHeight < 0.7) {
-                document.getElementById("main-image-container").style.backgroundColor = div.background;
-                // change font color for navbar and footer
-                document.getElementById("navbar").style.color = div.fontColor;
-                document.getElementById("footer").style.color = div.fontColor;
+                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > MOBILE_WIDTH) {
+                    document.getElementById("main-image-container").style.backgroundColor = div.background;
+                    // change font color for navbar and footer
+                    document.getElementById("navbar").style.color = div.fontColor;
+                    document.getElementById("footer").style.color = div.fontColor;
+                }
 
                 // change particles
                 if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
@@ -96,15 +100,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 // change color for menu
-                // document.getElementById("menu").style.color = div.fontColor;
+                document.getElementById("menu").style.color = div.fontColor;
+                document.getElementById("menu").style.background = div.background;
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
-                document.getElementById("main-image-container").style.backgroundColor = div.background;
-                document.getElementById("navbar").style.color = div.fontColor;
-                document.getElementById("footer").style.color = div.fontColor;
+                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > MOBILE_WIDTH) {
+                    document.getElementById("main-image-container").style.backgroundColor = div.background;
+                    document.getElementById("navbar").style.color = div.fontColor;
+                    document.getElementById("footer").style.color = div.fontColor;
+                }
 
                 // change particles
-                console.log(pJSDom[0].pJS.particles.color.value, div.particlesColor);
+                // console.log(pJSDom[0].pJS.particles.color.value, div.particlesColor);
                 if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
                     pJSDom[0].pJS.particles.color.value = div.particlesColor;
                     pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
@@ -112,19 +119,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 // change color for menu
-                // document.getElementById("menu").style.color = div.fontColor;
+                document.getElementById("menu").style.color = div.fontColor;
+                document.getElementById("menu").style.background = div.background;
             }
         })
     }
-
-    // scrollHandler();
 
     // on nav hamburger click
     document.getElementById("hamburger").onclick = function () {
         document.getElementById("menu").style.display = "flex";
         setTimeout(
             function () {
-                document.getElementById("container").style.filter = "blur(20px)";
+                // document.getElementById("container").style.filter = "blur(20px)";
                 document.getElementById("menu").style.opacity = 1;
             },
             100
@@ -139,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function () {
                 document.getElementById("menu").style.display = "none";
             },
-            100
+            200
         );
     }
 
