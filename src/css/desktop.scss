@@ -6,43 +6,6 @@
   display: none;
 }
 
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    color: #fff;
-    padding: 20px 25px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    box-sizing: border-box;
-    z-index: 99;
-    user-select: none;
-
-    #nav-logo {
-        #apogee-logo {
-            // max-height: 40px;
-        }
-    }
-
-    #nav-content {
-        display: flex;
-        align-items: center;
-
-        span {
-            margin-right: 40px;
-            font-size: 1.25em;
-            cursor: pointer;
-        }
-        #hamburger {
-            height: 20px;
-            width: 24.5px;
-            cursor: pointer;
-        }
-    }
-}
-
 #footer {
     position: fixed;
     bottom: 0;
