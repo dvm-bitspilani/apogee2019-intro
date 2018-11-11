@@ -6,3 +6,28 @@
   width: 100%;
   text-align: center;
 }
+
+.pastspeakers-img {
+  height: 220px;
+  width: 220px;
+  background-size: cover;
+  margin-bottom: 15px;
+  border-radius: 220px;
+}
+
+.pastspeakers-name, .pastspeakers-subname {
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+.pastspeakers-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  max-width: 90%;
+}
+
+.pastspeakers-subname {
+  font-size: 18px;
+  padding-bottom: 40px;
+  max-width: 90%;
+}
