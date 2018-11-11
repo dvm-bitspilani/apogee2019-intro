@@ -6,6 +6,8 @@
 		width: 100%;
 		font-family: 'futurist', 'sans-serif';
 		margin-bottom: 20px;
+		margin-top: 20px;
+
 	}
 }
 
@@ -19,6 +21,24 @@
 		padding: 0 35px;
 		margin: 10px 0;
 		
+	}
+
+	@media (max-width: 1050px) {
+		.sponsor-container {
+			width: 32%;	
+		}
+	}
+
+	@media (max-width: 750px) {
+		.sponsor-container {
+			width: 50%;	
+		}
+	}
+
+	@media (max-width: 480px) {
+		.sponsor-container {
+			width: 100%;	
+		}
 	}
 
 	img {
