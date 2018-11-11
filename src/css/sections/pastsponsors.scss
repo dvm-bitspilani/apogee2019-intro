@@ -1,0 +1,27 @@
+#pastsponsors-text-container {
+	width: 100%;
+	text-align: center;
+	h3 {
+		font-size: 48px;
+		width: 100%;
+		font-family: 'futurist', 'sans-serif';
+		margin-bottom: 20px;
+	}
+}
+
+#pastsponsor-container{
+	display: flex;
+	flex-wrap: wrap;
+	overflow-y: auto;
+
+	.sponsor-container{
+		width: 25%;	
+		padding: 0 35px;
+		margin: 10px 0;
+		
+	}
+
+	img {
+		width: 80%;	
+	}
+}
