@@ -7,3 +7,20 @@
     align-self: center;
   }
 }
+
+#teaser-text-container{
+		
+	#teaser-preview{
+		height: 65vh;	
+		margin-left: 25px;
+	}
+	#teaser-preview-image {
+		background-color: black;	
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
