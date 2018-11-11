@@ -1,5 +1,9 @@
 #pastspeakers-image-container {
   align-self: center;
+
+  img {
+    opacity: 0.63;
+  }
 }
 
 #pastspeakers-text-container {
@@ -11,6 +15,7 @@
   height: 220px;
   width: 220px;
   background-size: cover;
+  background-position: center;
   margin-bottom: 15px;
   border-radius: 220px;
 }

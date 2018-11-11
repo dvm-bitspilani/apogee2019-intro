@@ -4,42 +4,42 @@ const pastSpeakers = [
   {
     name: "APJ Abdul Kalam",
     subName: "Former President (2007)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/apj.jpeg")
   },
   {
     name: "Jimmy Wales",
     subName: "Founder, Wikipedia (2011)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/jimmywales.jpg")
   },
   {
     name: "Walter Lewin",
     subName: "Former Professor of Physics, MIT (2014)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/walterlewin.jpg")
   },
   {
     name: "Richard Stallman",
     subName: "Founder, GNU (2016)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/richardstallman.jpg")
   },
   {
     name: "Salman Khurshid",
     subName: "Former Minister of Law and Justice (2017)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/SalmanKhursheed.jpg")
   },
   {
     name: "Simon Taufel",
     subName: "Retired Elite Cricket Umpire (2017)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/simon.jpg")
   },
   {
     name: "Danielle Feinberg",
     subName: "Director of Photography in Lighting, PIXAR (2018)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/DanielleFeinberg.jpg")
   },
   {
     name: "Kailash Satyarthi",
     subName: "Nobel Laureate in Peace (2015)",
-    img: require("../imgs/speakers/about-main.png")
+    img: require("../imgs/speakers/satyarathi.jpeg")
   }
 ];
 
