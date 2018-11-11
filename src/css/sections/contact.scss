@@ -1,0 +1,54 @@
+#contact-text-container {
+	width: 100%;
+	text-align: center;
+	h3{
+		font-family: 'TekoLight', 'sans-serif';
+		font-size: 48px;
+		width: 100%;
+		margin-top: 10px;
+	}
+	h4{
+		font-family: 'TekoLight';
+		width: 100%;
+		font-size: 32px;
+	}
+
+}
+#contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Overpass', 'sans-serif';
+	width: 100vw;
+	overflow-y: auto;
+	margin-top: 20px;
+
+	.person-container{
+		width: 25%;	
+		padding: 15px 0;
+	}
+
+	img {
+		border-radius: 100%;	
+	}
+
+	@media (max-width: 1050px) {
+		.person-container {
+			width: 32%;	
+		}
+	}
+
+	@media (max-width: 750px) {
+		.person-container {
+			width: 50%;	
+		}
+	}
+
+	@media (max-width: 480px) {
+		.person-container {
+			width: 100%;	
+		}
+	}
+}
+
