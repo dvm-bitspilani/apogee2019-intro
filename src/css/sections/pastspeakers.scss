@@ -23,11 +23,19 @@
 .pastspeakers-name {
   text-transform: uppercase;
   font-size: 30px;
-  max-width: 90%;
+  max-width: 70%;
 }
 
 .pastspeakers-subname {
   font-size: 18px;
   padding-bottom: 45px;
-  max-width: 90%;
+  max-width: 70%;
+}
+
+@media all and (max-width: 1000px) {
+  #pastspeakers-text-container {
+    h2 {
+      font-size: 2em;
+    }
+  }
 }

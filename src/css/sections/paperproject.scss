@@ -1,37 +1,3 @@
-// #paperproject {
-// 	// background-image: radial-gradient(#FFF246, #EEDA5C);
-// 	width: 100vw;
-// 	#paperproject-content {
-// 		display: flex;
-// 	}
-
-// 	#paperproject-image-container{
-// 		width: 70vw;	
-
-// 		img{ 
-// 			width: 70vw;	
-// 		}
-// 	}
-// 	#paperproject-text-container{
-// 		color: #172148;	
-// 		display: flex;
-// 		justify-content: center;
-// 		flex-direction: column;
-// 		padding-left: 50px;
-// 		h2 {
-// 			font-size: 3em;
-//       margin-bottom: 40px;
-//       font-family: 'futurist', sans-serif;
-// 		}
-// 		p {
-// 			line-height: 1.7;
-//       font-family: 'Overpass', sans-serif;
-//       font-weight: 300;
-//       font-size: 1.3em;
-// 		}
-// 	}
-// }
-
 #paperproject-image-container {
   align-self: flex-end;
 }
@@ -57,5 +23,11 @@
 @media all and (max-width: 1000px) {
   #paperproject-image-container {
     align-self: center;
+  }
+
+  #paperproject-text-container {
+    h2 {
+      font-size: 1.5em;
+    }
   }
 }

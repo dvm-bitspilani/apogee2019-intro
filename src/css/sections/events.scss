@@ -9,6 +9,10 @@
 
 .carousel-elem {
   transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .event-img {
@@ -33,6 +37,10 @@
 }
 
 @media all and (max-width: 1000px) {
+  .carousel-elem {
+    width: 100vw;
+  }
+
   #events-text-container h2 {
     font-size: 1.8em;
   }
