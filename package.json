@@ -54,6 +54,7 @@
     "autoprefixer": "^9.1.0",
     "axios": "^0.18.0",
     "es6-promise": "^4.2.4",
+    "flickity": "^2.1.2",
     "gh-pages": "^2.0.1",
     "jump.js": "^1.0.2",
     "postcss": "^7.0.2",
