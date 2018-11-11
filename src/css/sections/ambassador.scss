@@ -1,12 +1,16 @@
-#about-text-container{
+#ambassador-text-container {
   align-self: flex-end;
   margin-right: 10vw;
+   
+  h2 {
+    font-size: 4em;
+  }
 }
 
 @media all and (max-width: 1000px) {
-  #about-text-container {
+  #ambassador-text-container {
     h2 {
-      font-size: 3.4em;
+      font-size: 1.8em;
     }
 
     p {
