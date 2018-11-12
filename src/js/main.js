@@ -77,12 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function (e) {
         if (scrollTimer) { clearTimeout(scrollTimer); }
         scrollTimer = setTimeout(function () {
-            // set navbar-bg height
-            if(document.getElementById("navbar-bg").getBoundingClientRect().height === 0) {
-                let height = document.getElementById("navbar").offsetHeight;
-                document.getElementById("navbar-bg").style.height = height + "px";
-            }
-            
             if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) > MOBILE_WIDTH) {
                 desktopScrollHandler();
             } else {
@@ -115,9 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change colors of svg like apogee logo
                 svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
-
-                // change background of navbar
-                document.getElementById("navbar-bg").style.background = div.background;
+                inlineSvgColorHandler("menu-cross-svg", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
                 document.getElementById("main-image-container").style.backgroundColor = div.background;
@@ -141,9 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change colors of svg like apogee logo
                 svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
-
-                // change background of navbar
-                document.getElementById("navbar-bg").style.background = div.background;
+                inlineSvgColorHandler("menu-cross-svg", div.fontColor);
             }
         })
     }
@@ -170,9 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change colors of svg like apogee logo
                 svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
-
-                // change background of navbar
-                document.getElementById("navbar-bg").style.background = div.background;
+                inlineSvgColorHandler("menu-cross-svg", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.2) {
                 // change font color for navbar and footer
@@ -194,9 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change colors of svg like apogee logo
                 svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
-
-                // change background of navbar
-                document.getElementById("navbar-bg").style.background = div.background;
+                inlineSvgColorHandler("menu-cross-svg", div.fontColor);
             }
         })
     }
@@ -206,7 +192,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("menu").style.display = "flex";
         setTimeout(
             function () {
-                // document.getElementById("container").style.filter = "blur(20px)";
                 document.getElementById("menu").style.opacity = 1;
             },
             100
@@ -214,8 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // on menu cross click
-    document.getElementById("menu-cross").onclick = function () {
-        document.getElementById("container").style.filter = "none";
+    document.getElementById("menu-cross-svg").onclick = function () {
         document.getElementById("menu").style.opacity = 0;
         setTimeout(
             function () {
@@ -229,7 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let items = document.getElementsByClassName("menu-item");
     for (let i = 0; i < items.length; i++) {
         items[i].onclick = function () {
-            document.getElementById("container").style.filter = "none";
             document.getElementById("menu").style.opacity = 0;
             setTimeout(
                 function () {

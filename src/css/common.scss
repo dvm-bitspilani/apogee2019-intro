@@ -121,9 +121,10 @@ body {
 
   #menu-cross {
     position: absolute;
-    top: 20px;
-    right: 25px;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
+    width: 22px;
   }
 }
 
@@ -154,6 +155,8 @@ body {
   box-sizing: border-box;
   z-index: 999;
   user-select: none;
+  background-image: url('/static/blur.svg');
+  background-repeat: repeat;
 
   #nav-logo {
       #apogee-logo {
@@ -176,22 +179,4 @@ body {
           cursor: pointer;
       }
   }
-}
-
-#navbar-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  box-sizing: border-box;
-  z-index: 99;
-  user-select: none;
-  width: 100vw;
-  z-index: 99;
-  transition: all 0.2s ease-in-out;
-  opacity: 0.95;
 }
