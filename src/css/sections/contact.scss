@@ -13,6 +13,11 @@
 		font-size: 32px;
 	}
 
+	@media (max-width: 480px) {
+		h3 {
+			margin-top: 100px;
+		}
+	}
 }
 #contact-container {
 	display: flex;

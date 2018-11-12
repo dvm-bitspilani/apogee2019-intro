@@ -123,7 +123,7 @@ body {
   #menu-cross {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 35px;
     cursor: pointer;
     width: 22px;
   }
@@ -149,20 +149,17 @@ body {
   left: 0;
   display: flex;
   color: #fff;
-  padding: 20px 25px;
+  padding: 20px 35px 20px 25px;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
   box-sizing: border-box;
   z-index: 999;
   user-select: none;
-  background-image: url('/static/blur.svg');
   background-repeat: repeat;
 
   #nav-logo {
-      #apogee-logo {
-          // max-height: 40px;
-      }
+    width: 200px;
   }
 
   #nav-content {

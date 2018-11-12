@@ -12,7 +12,7 @@
     left: 0;
     display: flex;
     color: #fff;
-    padding: 20px 25px;
+    padding: 20px 35px 20px 25px;    
     justify-content: space-between;
     align-items: center;
     width: 100vw;
@@ -23,9 +23,10 @@
     font-weight: 700;
 
     #scroll-icon {
-        max-height: 30px;
+        width: 20px;
     }
     #social-icons {
+        width: 150px;
         a {
             margin-right: 20px;
             text-decoration: none;

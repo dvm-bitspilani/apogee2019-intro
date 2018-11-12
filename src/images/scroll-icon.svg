@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.875 55.2" id="scroll-icon-svg">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.81;
+      }
+      #mouse-outline {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="mouse-outline" class="cls-1" transform="translate(-12 0.7)">
+    <g id="Group_5" data-name="Group 5" transform="translate(12.5 -0.2)">
+      <g id="Group_4" data-name="Group 4">
+        <g id="Group_3" data-name="Group 3">
+          <path id="Path_1" data-name="Path 1" class="cls-2" d="M29.437,54A16.987,16.987,0,0,1,12.5,37.062V16.737a16.937,16.937,0,0,1,33.875,0V37.062A16.987,16.987,0,0,1,29.437,54Zm0-50.812a13.59,13.59,0,0,0-13.55,13.55V37.062a13.55,13.55,0,1,0,27.1,0V16.737A13.535,13.535,0,0,0,29.437,3.187Z" transform="translate(-12.5 0.2)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(28.167 10.979)">
+      <g id="Group_7" data-name="Group 7">
+        <g id="Group_6" data-name="Group 6">
+          <path id="Path_2" data-name="Path 2" class="cls-2" d="M32.694,24.856A1.7,1.7,0,0,1,31,23.162V14.694a1.694,1.694,0,1,1,3.387,0v8.469A1.7,1.7,0,0,1,32.694,24.856Z" transform="translate(-31 -13)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

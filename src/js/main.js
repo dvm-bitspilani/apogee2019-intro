@@ -107,9 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("menu").style.background = div.background;
 
                 // change colors of svg like apogee logo
-                svgColorHandler("apogee-logo", div.fontColor);
+                // svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
                 inlineSvgColorHandler("menu-cross-svg", div.fontColor);
+                inlineSvgColorHandler("scroll-icon-svg", div.fontColor);
+                inlineSvgColorHandler("social-icons-svg", div.fontColor);
+                inlineSvgColorHandler("apogee-logo-svg", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
                 document.getElementById("main-image-container").style.backgroundColor = div.background;
@@ -131,9 +134,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("menu").style.background = div.background;
 
                 // change colors of svg like apogee logo
-                svgColorHandler("apogee-logo", div.fontColor);
+                // svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
                 inlineSvgColorHandler("menu-cross-svg", div.fontColor);
+                inlineSvgColorHandler("scroll-icon-svg", div.fontColor);
+                inlineSvgColorHandler("social-icons-svg", div.fontColor);
+                inlineSvgColorHandler("apogee-logo-svg", div.fontColor);
             }
         })
     }
@@ -158,9 +164,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("menu").style.background = div.background;
 
                 // change colors of svg like apogee logo
-                svgColorHandler("apogee-logo", div.fontColor);
+                // svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
                 inlineSvgColorHandler("menu-cross-svg", div.fontColor);
+                inlineSvgColorHandler("scroll-icon-svg", div.fontColor);
+                inlineSvgColorHandler("social-icons-svg", div.fontColor);
+                inlineSvgColorHandler("apogee-logo-svg", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.2) {
                 // change font color for navbar and footer
@@ -180,9 +189,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("menu").style.background = div.background;
 
                 // change colors of svg like apogee logo
-                svgColorHandler("apogee-logo", div.fontColor);
+                // svgColorHandler("apogee-logo", div.fontColor);
                 inlineSvgColorHandler("hamburger", div.fontColor);
                 inlineSvgColorHandler("menu-cross-svg", div.fontColor);
+                inlineSvgColorHandler("scroll-icon-svg", div.fontColor);
+                inlineSvgColorHandler("social-icons-svg", div.fontColor);
+                inlineSvgColorHandler("apogee-logo-svg", div.fontColor);
             }
         })
     }
