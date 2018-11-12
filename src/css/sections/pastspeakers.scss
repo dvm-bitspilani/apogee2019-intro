@@ -2,7 +2,7 @@
   align-self: center;
 
   img {
-    opacity: 0.63;
+    opacity: 0.4;
   }
 }
 
@@ -16,8 +16,8 @@
   width: 220px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 15px;
-  border-radius: 220px;
+  margin-bottom: 5px;
+  border-radius: 50%;
 }
 
 .pastspeakers-name, .pastspeakers-subname {
@@ -27,12 +27,12 @@
 
 .pastspeakers-name {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
   max-width: 70%;
 }
 
 .pastspeakers-subname {
-  font-size: 18px;
+  font-size: 15px;
   padding-bottom: 45px;
   max-width: 70%;
 }
@@ -45,7 +45,7 @@
   }
 
   .pastspeakers-name {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .pastspeakers-subname {

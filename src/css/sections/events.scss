@@ -2,7 +2,7 @@
   align-self: center;
 
   img {
-    opacity: 0.63;
+    opacity: 0.4;
   }
 }
 
@@ -22,24 +22,24 @@
 }
 
 .event-img {
-  height: 170px;
-  width: 255px;
+  height: 150px;
+  width: 200px;
   background: url('../../imgs/about-main.png');
   background-size: cover;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .event-name {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Overpass', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   padding-bottom: 25px;
   max-width: 90%;
 }
 
 .is-selected {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 @media all and (max-width: 1000px) {
