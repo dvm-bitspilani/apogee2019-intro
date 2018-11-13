@@ -3,6 +3,11 @@
   margin-right: 10vw;
 }
 
+#about-image {
+  margin-left: -50px;
+  width: 50vw;
+}
+
 @media all and (max-width: 1000px) {
   #about-text-container {
     h2 {
@@ -14,5 +19,13 @@
       line-height: 1.2;
       font-weight: 400;
     }
+  }
+  #about-image {
+    opacity: 0.4;
+    width: auto;
+    height: 110vh;
+    position: absolute;
+    right: -200px;
+    top: 0;
   }
 }

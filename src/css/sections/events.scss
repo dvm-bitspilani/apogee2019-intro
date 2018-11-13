@@ -6,6 +6,12 @@
   }
 }
 
+#events-image {
+  margin-top: -50px;
+  width: 90vw;
+  opacity: 0.9;
+}
+
 #events-text-container {
   width: 100%;
   text-align: center;
@@ -53,5 +59,14 @@
 
   .event-name {
     font-size: 25px;
+  }
+
+  #events-image {
+    top: 80px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
   }
 }
