@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // change background
         divs.map(div => {
             if (document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top / viewportHeight < 0.7) {
-                document.getElementById("main-image-container").style.backgroundColor = div.background;
+                if(div.name!=='contact')
+                    document.getElementById("main-image-container").style.backgroundColor = div.background;
 
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
@@ -100,6 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.particles.color.value = div.particlesColor;
                     pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
                     pJSDom[0].pJS.fn.particlesRefresh();
+                }
+
+                if(div.name === 'contact') {
+                    document.getElementById('particles-js').style.opacity = 0;
+                } else {
+                    document.getElementById('particles-js').style.opacity = 0.6;
                 }
 
                 // change color for menu
@@ -115,7 +122,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 inlineSvgColorHandler("apogee-logo-svg", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
-                document.getElementById("main-image-container").style.backgroundColor = div.background;
+                if(div.name!=='contact')
+                    document.getElementById("main-image-container").style.backgroundColor = div.background;
 
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
@@ -127,6 +135,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.particles.color.value = div.particlesColor;
                     pJSDom[0].pJS.particles.line_linked.color = div.particlesColor;
                     pJSDom[0].pJS.fn.particlesRefresh();
+                }
+
+                if(div.name === 'contact') {
+                    document.getElementById('particles-js').style.opacity = 0;
+                } else {
+                    document.getElementById('particles-js').style.opacity = 0.6;
                 }
 
                 // change color for menu
@@ -159,6 +173,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
+                if(div.name === 'contact') {
+                    document.getElementById('particles-js').style.opacity = 0;
+                } else {
+                    document.getElementById('particles-js').style.opacity = 0.6;
+                }
+
                 // change color for menu
                 document.getElementById("menu").style.color = div.fontColor;
                 document.getElementById("menu").style.background = div.background;
@@ -184,6 +204,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
+                if(div.name === 'contact') {
+                    document.getElementById('particles-js').style.opacity = 0;
+                } else {
+                    document.getElementById('particles-js').style.opacity = 0.6;
+                }
+                
                 // change color for menu
                 document.getElementById("menu").style.color = div.fontColor;
                 document.getElementById("menu").style.background = div.background;

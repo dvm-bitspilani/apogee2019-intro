@@ -136,6 +136,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0.6;
+  transition: all 0.2s ease-in-out;
 }
 
 #apogee-logo {
@@ -177,4 +178,8 @@ body {
           cursor: pointer;
       }
   }
+}
+
+#contact-image-container {
+  background: #000313;
 }
