@@ -1,3 +1,4 @@
+import './landing.scss'
 import './about.scss'
 import './events.scss'
 import './pastspeakers.scss'

@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // on scroll event
     let divs = [
         {
+            id: "landing-image-container",
+            background: "#010417",
+            fontColor: "#fff",
+            name: "landing",
+            particlesColor: "#ffffff"
+        },
+        {
             id: "about-image-container",
             background: "#0A81D1",
             fontColor: "#fff",
@@ -103,10 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
-                if(div.name === 'contact') {
+                let opacity = 0.6;
+                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                    opacity = 0.3;
+                if(div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = 0.6;
+                    document.getElementById('particles-js').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -137,10 +147,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
-                if(div.name === 'contact') {
+                let opacity = 0.6;
+                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                    opacity = 0.3;
+                if(div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = 0.6;
+                    document.getElementById('particles-js').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -173,10 +186,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
-                if(div.name === 'contact') {
+                let opacity = 0.6;
+                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                    opacity = 0.3;
+                if(div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = 0.6;
+                    document.getElementById('particles-js').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -204,10 +220,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     pJSDom[0].pJS.fn.particlesRefresh();
                 }
 
-                if(div.name === 'contact') {
+                let opacity = 0.6;
+                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                    opacity = 0.3;
+                if(div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = 0.6;
+                    document.getElementById('particles-js').style.opacity = opacity;
                 }
                 
                 // change color for menu

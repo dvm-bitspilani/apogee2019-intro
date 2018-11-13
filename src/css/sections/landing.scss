@@ -1,0 +1,49 @@
+#landing-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-image {
+    height: 110vh;
+    opacity: 0.6;
+}
+
+#landing-text-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: 'TekoLight';
+        letter-spacing: 30px;
+        font-size: 100px;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    #landing-image-container {
+        height: 100vh;
+    }
+
+    #landing-image-container {
+        padding: 0;
+    }
+
+    #landing-text-container {
+        h2 {
+            font-family: 'TekoLight';
+            letter-spacing: 11px;
+            font-size: 40px;
+            padding: 0 10px;
+        }
+    }
+
+    #landing-image {
+        height: auto;
+        width: 100vw;
+    }
+}
