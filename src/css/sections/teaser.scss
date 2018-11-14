@@ -2,10 +2,27 @@
   align-self: flex-end;
 }
 
+#teaser-image {
+  width: auto;
+  height: 140vh;
+  position: absolute;
+	right: -100px;
+	top: 0;
+}
+
 @media all and (max-width: 1000px) {
   #teaser-image-container {
     align-self: center;
-  }
+	}
+	#teaser-image {
+		width: auto;
+		opacity: 0.4;
+		height: 140vh;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+	}
 }
 
 #teaser-text-container{
@@ -21,6 +38,5 @@
 		justify-content: center;
 		align-items: center;
 	}
-
 }
 

@@ -1,5 +1,8 @@
-#paperproject-image-container {
-  align-self: flex-end;
+#paperproject-image {
+  width: 70vw;
+  position: absolute;
+  right: -50px;
+  top: -100px;
 }
 
 #paperproject-text-container{
@@ -29,5 +32,13 @@
     h2 {
       font-size: 1.5em;
     }
+  }
+  
+  #paperproject-image {
+    width: auto;
+    height: 120vh;
+    margin-top: 10vh;
+    opacity: 0.4;
+    position: static;
   }
 }

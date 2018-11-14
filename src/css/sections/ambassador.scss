@@ -7,6 +7,14 @@
   }
 }
 
+#ambassador-image {
+  width: auto;
+  height: 120vh;
+  position: absolute;
+  left: 0;
+  bottom: -20vh;
+}
+
 @media all and (max-width: 1000px) {
   #ambassador-text-container {
     h2 {
@@ -18,5 +26,15 @@
       line-height: 1.2;
       font-weight: 400;
     }
+  }
+
+  #ambassador-image {
+    opacity: 0.4;
+    width: auto;
+    height: 120vh;
+    position: absolute;
+    right: -50px;
+    bottom: -20vh;
+    left: auto;
   }
 }

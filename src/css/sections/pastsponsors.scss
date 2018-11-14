@@ -49,3 +49,14 @@
 		width: 80%;	
 	}
 }
+
+@media (max-width: 600px) {
+	#pastsponsors-text-container {
+		h2 {
+			font-size: 2em;
+		}
+	}
+	#pastsponsor-container {
+		margin-bottom: 10vh;
+	}
+}

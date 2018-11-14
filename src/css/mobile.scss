@@ -12,10 +12,19 @@
   }
 
   #navbar {
+    padding: 20px 20px;
+    
     #nav-content {
       span {
         margin-right: 20px;
       }
+    }
+  }
+
+  #menu {
+    #menu-cross {
+      top: 28px;
+      right: 20px;
     }
   }
 
@@ -78,5 +87,11 @@
 
   #scrollMore {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 400px) {
+  #menu-text {
+    display: none
   }
 }
