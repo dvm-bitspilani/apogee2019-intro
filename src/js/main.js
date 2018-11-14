@@ -178,6 +178,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
+                if(div.name==='contact')
+                    document.getElementById("scrollMore").style.opacity = 0;
+                else
+                    document.getElementById("scrollMore").style.opacity = 0.5;
 
                 // change particles
                 if (pJSDom[0].pJS.particles.color.value !== div.particlesColor) {
@@ -211,6 +215,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
+                if(div.name==='contact')
+                    document.getElementById("scrollMore").style.opacity = 0;
+                else
+                    document.getElementById("scrollMore").style.opacity = 0.5;
 
                 // change particles
                 // console.log(pJSDom[0].pJS.particles.color.value, div.particlesColor);

@@ -60,7 +60,11 @@
 @media (max-width: 1000px) {
 	#contact-text-container {
 		padding-bottom: 100px;
-    	margin-bottom: 0;
+		margin-bottom: 0;
+		
+		h3 {
+			margin-top: 0;
+		}
 	}
 }
 
