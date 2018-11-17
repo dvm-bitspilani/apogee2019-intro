@@ -17,14 +17,18 @@
   text-align: center;
 }
 
-.carousel-elem {
+.carousel-elem-events {
   transition: transform 0.2s linear;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 270px;
+  width: 330px;
   padding-top: 60px;
+}
+
+.carousel-elem-events.is-selected {
+  transform: scale(1.2);
 }
 
 .event-img {
@@ -44,9 +48,6 @@
   max-width: 90%;
 }
 
-.is-selected {
-  transform: scale(1.2);
-}
 
 @media all and (max-width: 1000px) {
   .carousel-elem {

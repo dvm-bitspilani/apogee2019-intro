@@ -47,7 +47,7 @@ const speakers = document.getElementsByClassName("carousel-speaker")[0];
 pastSpeakers.forEach(
   speaker => {
     const wrap = document.createElement("div");
-    wrap.classList.add("carousel-elem");
+    wrap.classList.add("carousel-elem-pastspeakers");
 
     const speakerImg = document.createElement("div");
     speakerImg.classList.add("pastspeakers-img");

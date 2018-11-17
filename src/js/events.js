@@ -32,7 +32,7 @@ const eventsCarousel = document.getElementsByClassName("carousel-events")[0];
 events.forEach(
   event => {
     const wrap = document.createElement("div");
-    wrap.classList.add("carousel-elem");
+    wrap.classList.add("carousel-elem-events");
 
     const eventImg = document.createElement("div");
     eventImg.classList.add("event-img");
@@ -59,7 +59,7 @@ let flkty1 = new flickity(
   '.carousel-events', {
     wrapAround: true,
     draggable: true,
-    pageDots: false,
+    pageDots: false
   }
 );
 

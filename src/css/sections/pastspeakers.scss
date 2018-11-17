@@ -11,6 +11,20 @@
   text-align: center;
 }
 
+.carousel-elem-pastspeakers {
+  transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  padding-top: 60px;
+}
+
+.carousel-elem-pastspeakers.is-selected {
+  transform: scale(1.2);
+}
+
 .pastspeakers-img {
   height: 220px;
   width: 220px;
