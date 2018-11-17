@@ -4,27 +4,27 @@ import flickity from 'flickity';
 const events = [
   {
     name: "IDRL",
-    img: require("../imgs/speakers/simon.jpg")
+    img: require("../imgs/events/idrl.jpg")
   },
   {
     name: "Indian navy demo",
-    img: require("../imgs/speakers/simon.jpg")
+    img: require("../imgs/events/indianNavy.png")
   },
   {
     name: "NAO bot",
-    img: require("../imgs/speakers/simon.jpg")
+    img: require("../imgs/events/nao.png")
   },
   {
     name: "RAW",
-    img: require("../imgs/speakers/simon.jpg")
+    img: require("../imgs/events/raw.png")
   },
   {
     name: "FTGP",
-    img: require("../imgs/speakers/simon.jpg")
+    img: require("../imgs/events/ftgp.jpg")
   },
   {
     name: "AIC",
-    img: require("../imgs/speakers/simon.jpg")
+    img: require("../imgs/events/aic.png")
   }
 ];
 
