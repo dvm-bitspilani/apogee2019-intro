@@ -1,11 +1,14 @@
 #contact-text-container {
+  height: 80vh;
 	width: 100%;
-	text-align: center;
+  text-align: center;
+  margin-bottom: 0;
 	h3{
 		font-family: 'TekoLight', 'sans-serif';
 		font-size: 48px;
 		width: 100%;
-		margin-top: 10px;
+    // margin-top: 10px;
+    letter-spacing: 15px;
 	}
 	h4{
 		font-family: 'TekoLight';
@@ -19,6 +22,12 @@
 		}
 	}
 }
+
+#contact-image-container {
+  height: 90vh;
+  background: #000;
+}
+
 #contact-container {
 	display: flex;
 	flex-wrap: wrap;
