@@ -3,6 +3,7 @@
 	width: 100%;
   text-align: center;
   margin-bottom: 0;
+  background: #000;
 	h3{
 		font-family: 'TekoLight', 'sans-serif';
 		font-size: 48px;
@@ -35,7 +36,7 @@
 	justify-content: center;
 	font-family: 'Overpass', 'sans-serif';
 	width: 100vw;
-	overflow-y: auto;
+	// overflow-y: auto;
 	margin-top: 20px;
 
 	.person-container{
