@@ -77,10 +77,12 @@ function init() {
                     college,
                     city,
                     email,
-                    phone
+                    phone,
+                    gender
                 })
             })
                 .then((response) => {
+                    console.log(response);
                     if(response.status === 0) {
                         displayError('Email already exists!');
                     } else if ( response.status === 1) {
