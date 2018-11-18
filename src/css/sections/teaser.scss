@@ -48,7 +48,10 @@
 @media all and (max-width: 1000px) {
   #teaser-image-container {
     align-self: center;
-	}
+  }
+  #teaser-text-container {
+    margin-top: 0;
+  }
 	#teaser-image {
 		width: auto;
 		opacity: 0.4;

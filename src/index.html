@@ -114,50 +114,50 @@
 
                 <div id="pastsponsors-text-container" class="text-container">
                     <h2>PAST SPONSORS</h2>
-                    <div id="pastsponsor-container" class = "carousel-pastsponsors">
-                        <div class = "carousel-elem-pastsponsors">
+                    <div id="pastsponsor-container" class="carousel-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
                             </div>
                         </div>
-                        <div class = "carousel-elem-pastsponsors">
+                        <div class="carousel-elem-pastsponsors">
                             <div class="sponsor-image"><img src="./imgs/gaana.png" alt="Costa"> </div>
                             <div class="sponosr-info">
                                 This good sponsor
@@ -226,30 +226,64 @@
                 <div id="teaser-text-container" class="text-container">
                     <h2>TEASER</h2>
                     <div id="teaser-preview">
-                      <a href = "https://youtu.be/MqpPYIjDw4I" target = "_blank">
-                        <div id="teaser-preview-image">
-                            <img src="./images/yt.png" alt="">
-                        </div>
-                      </a>
+                        <a href="https://youtu.be/MqpPYIjDw4I" target="_blank">
+                            <div id="teaser-preview-image">
+                                <img src="./images/yt.png" alt="">
+                            </div>
+                        </a>
                     </div>
 
                 </div>
 
                 <div id="ambassador-text-container" class="text-container">
-                    <h2>CAMPUS AMBASSADOR</h2>
-                    <!-- <p>
-                        Birla Institute of Technology and Science, Pilani is one of the premier and most esteemed colleges in India. It is recognized as the best private engineering college of the country and is home to some of the brightest minds of the nation. Over the years, BITS Pilani has maintained a reputation of imparting excellence in education along with co-curricular and extracurricular, a combination of which is the key to achieving success in life and making difference to the world.
-                    </p> -->
-                    <p>
-                        As a campus ambassador, you will have certain responsibilities like managing social media,
-                        publicity and organising workshops.
-                    </p>
+                    <div id="campus-ambassador-content">
+                        <h2>CAMPUS AMBASSADOR</h2>
+                        <p>
+                            As a campus ambassador, you will have certain responsibilities like managing social media,
+                            publicity and organising workshops.
+                        </p>
+                        <div id="open-register" class="register-button">Register</div>
+                    </div>
+                    <div id="register">
+                        <h2>REGISTRATION</h2>
+                        <form id="register-form" action="">
+                            <label>Name</label>
+                            <input type="text" name="name" id="register-name">
+                            <label>College</label>
+                            <select id="register-college">
+                                <option value="select" disabled selected>Select</option>
+                            </select>
+                            <label>Gender</label>
+                            <div id="gender-div">
+                                <div>
+                                    <input type="radio" id="male" class="gender-option" name="gender" value="M" checked> Male
+                                </div>
+                                <div>
+                                    <input type="radio" id="female" class="gender-option" name="gender" value="F"> Female
+                                </div>
+                                <div>
+                                    <input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
+                                </div>
+                            </div>
+                            <label>City</label>
+                            <input type="text" name="city" id="register-city">
+                            <label>Email</label>
+                            <input type="email" name="email" id="register-email">
+                            <label>Phone</label>
+                            <input type="text" name="phone" id="register-phone">
+                            <label id="error"></label>
+                            <div id="register-buttons">
+                                <button id="register-back" class="register-button">Go back</button>
+                                <input type="submit" id="register-submit" class="register-button"></input>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="contact-text-container" class="text-container">
                     <h3>THE REALITY ROULETTTE</h3>
                     <h4>28<sup>th</sup> March - 31<sup>st</sup>March</h4>
-                    <div id="contact-container" class = "carousel-contact">
+                    <div id="contact-container" class="carousel-contact">
                         <div class="person-container">
                             <div class="person-image"><img src="./imgs/aditipandey.png" alt="Costa"> </div>
                             <div class="person-info">

@@ -1,0 +1,121 @@
+.register-button {
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    width: 200px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-family: 'Overpass';
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    transition: all 0.1s ease-in-out;
+    text-align: center;
+}
+.register-button:hover {
+    background: #fff;
+    color: #F1356B;
+}
+
+#register {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    h2 {
+        font-size: 4em;
+    }
+    #register-form {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Overpass';
+        
+        label {
+            font-size: 20px;
+        }
+
+        input, select {
+            background: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            font-size: 18px;
+            padding: 5px 0;
+            color: #fff;
+            margin-bottom: 10px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        input:active, input:focus {
+            background: #00000010;
+        }
+
+        #register-buttons {
+            margin-top: 20px;
+        }
+
+        .register-button {
+            padding: 10px 15px;
+            border: 2px solid #fff;
+            text-transform: uppercase;
+            width: 200px;
+            cursor: pointer;
+            margin-right: 20px;
+            font-family: 'Overpass';
+            font-size: 20px;
+            color: #fff;
+            background: none;
+            transition: all 0.1s ease-in-out;
+            text-align: center;
+        }
+        .register-button:hover {
+            background: #fff;
+            color: #F1356B;
+        }
+
+        #error {
+            color: #000;
+        }
+
+        #gender-div {
+            display: flex;
+            flex-direction: row;
+
+            div {
+                margin-right: 30px;
+                
+                input {
+                    margin-right: 5px;
+                }
+            }
+            div:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #register {
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        #register-form {
+            .register-button {
+                padding: 5px 8px;
+                border: 2px solid #fff;
+                text-transform: uppercase;
+                width: 120px;
+                cursor: pointer;
+                margin-right: 10px;
+                font-family: 'Overpass';
+                font-size: 18px;
+                color: #fff;
+                background: none;
+                transition: all 0.1s ease-in-out;
+                text-align: center;
+            }
+        }
+    }
+}

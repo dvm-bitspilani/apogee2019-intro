@@ -1,9 +1,17 @@
 #ambassador-text-container {
   align-self: flex-end;
   margin-right: 10vw;
-   
+
+  #campus-ambassador-content {
+    transition: opacity 0.3s ease-in-out;
+  }
+
   h2 {
     font-size: 4em;
+  }
+
+  #open-register {
+    margin-top: 20px;
   }
 }
 
