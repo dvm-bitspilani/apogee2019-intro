@@ -1,3 +1,8 @@
+window.onload = function () {
+    document.getElementById("load-wrapper").style.opacity = 0;
+    setTimeout(function(){document.getElementById("load-wrapper").style.display = "none"}, 400)
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // when does mobile styling start
     const MOBILE_WIDTH = 1000;
