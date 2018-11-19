@@ -318,6 +318,16 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementsByClassName("carousel-contact")[0].addEventListener("touchmove", function (e) {
         e.preventDefault();
     });
+
+    // social icons link
+    document.getElementById("facebook-icon").addEventListener("click", () => openLink("https://www.facebook.com/bitsapogee/"))
+    document.getElementById("twitter-icon").addEventListener("click", () => openLink("https://twitter.com/bitsapogee?lang=en"))
+    document.getElementById("instagram-icon").addEventListener("click", () => openLink("https://www.instagram.com/bitsapogee/?hl=en"))
+
+    function openLink (url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
 });
 
 // svg color change handler
