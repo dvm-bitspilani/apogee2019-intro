@@ -16,7 +16,7 @@ const events = [
   },
   {
     name: "RAW",
-    img: require("../imgs/events/raw.png")
+    img: require("../imgs/events/raw.jpg")
   },
   {
     name: "FTGP",

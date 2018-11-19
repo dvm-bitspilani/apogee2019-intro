@@ -7,6 +7,8 @@
 
 #pep-btns {
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
   
   a {
     text-decoration: none;
@@ -46,6 +48,7 @@
   }
 
   #paperproject-text-container {
+    justify-content: flex-start;
     h2 {
       font-size: 1.5em;
     }
@@ -57,5 +60,10 @@
     margin-top: 10vh;
     opacity: 0.4;
     position: static;
+  }
+  #pep-btns {
+    .pep-register-btn {
+      font-size: 15px !important;
+    }
   }
 }

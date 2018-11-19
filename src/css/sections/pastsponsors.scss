@@ -15,11 +15,31 @@
 	}
 }
 
-#pastsponsor-container{
-	// display: flex;
-	// flex-wrap: wrap;
-	// overflow-y: auto;
+#sponsors-image {
+margin-top: -50px;
+width: 90vw;
+opacity: 0.9;
+}
 
+.sponsor-image {
+height: 250px;
+width: 250px;
+// background: url('../../imgs/about-main.png');
+margin-bottom: 5px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 50%;
+}
+.sponsor-info {
+text-align: center;
+text-transform: uppercase;
+font-family: 'Overpass', sans-serif;
+font-size: 20px;
+padding-bottom: 50px;
+max-width: 90%;
+}
+
+#pastsponsor-container{
 	.sponsor-container{
 		width: 25%;	
 		padding: 0 35px;
@@ -40,28 +60,6 @@
   .carousel-elem-pastsponsors.is-selected {
 	transform: scale(1.2);
   }
-
-	// @media (max-width: 1050px) {
-	// 	.sponsor-container {
-	// 		width: 32%;	
-	// 	}
-	// }
-
-	// @media (max-width: 750px) {
-	// 	.sponsor-container {
-	// 		width: 50%;	
-	// 	}
-	// }
-
-	// @media (max-width: 480px) {
-	// 	.sponsor-container {
-	// 		width: 100%;	
-	// 	}
-	// }
-
-	// img {
-	// 	width: 80%;	
-	// }
 }
 
 @media (max-width: 600px) {
@@ -72,5 +70,9 @@
 	}
 	#pastsponsor-container {
 		margin-bottom: 10vh;
+	}
+	.sponsor-image {
+		height: 200px;
+		width: 200px;
 	}
 }
