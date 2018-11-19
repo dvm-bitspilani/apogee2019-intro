@@ -168,6 +168,7 @@ body {
   #nav-content {
       display: flex;
       align-items: center;
+      transition: opacity 0.3s ease-in-out;
 
       span {
           margin-right: 40px;

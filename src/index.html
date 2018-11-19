@@ -9,6 +9,25 @@
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,700" rel="stylesheet">  -->
     <style>
+        #loader-label {
+        position: relative;
+        top: 66%;
+        }
+        #loader-p {
+        color: #d0cade;
+        font-size: .889em;
+        line-height: 1.2;
+        font-family: 'Inconsolata', sans-serif;
+        text-align: center;
+
+        }
+        #loader-h2 {
+        color: #fafafa;
+        font-size: 1.777em;
+        line-height: 1.2;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        }
         #load-wrapper {
         transition: opacity 0.3s ease-in-out;
         position: fixed;
@@ -178,30 +197,49 @@
         animation:2000ms pulseInSecondary 600ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
         -webkit-animation:2000ms pulseInSecondary 600ms cubic-bezier(0.4, 0.0, 0.2, 1) infinite;	
         }
-
-        #loader-label {
-        position: relative;
-        top: 66%;
-        }
-        #loader-p {
-        color: #d0cade;
-        font-size: .889em;
-        line-height: 1.2;
-        font-family: 'Inconsolata', sans-serif;
-        text-align: center;
-
-        }
-        #loader-h2 {
-        color: #fafafa;
-        font-size: 1.777em;
-        line-height: 1.2;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        }
     </style>
 </head>
 
 <body>
+    <div id="register-cross"></div>
+    <div id="register">
+        <div id="register-content">
+            <h2>REGISTRATION</h2>
+            <form id="register-form" action="">
+                <label>Name</label>
+                <input type="text" name="name" id="register-name">
+                <label>College</label>
+                <select id="register-college">
+                    <option value="select" disabled selected>Select</option>
+                </select>
+                <label>Gender</label>
+                <div id="gender-div">
+                    <div>
+                        <input type="radio" id="male" class="gender-option" name="gender" value="M" checked>
+                        Male
+                    </div>
+                    <div>
+                        <input type="radio" id="female" class="gender-option" name="gender" value="F">
+                        Female
+                    </div>
+                    <div>
+                        <input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
+                    </div>
+                </div>
+                <label>City</label>
+                <input type="text" name="city" id="register-city">
+                <label>Email</label>
+                <input type="email" name="email" id="register-email">
+                <label>Phone</label>
+                <input type="text" name="phone" id="register-phone">
+                <label id="error"></label>
+                <div id="register-buttons">
+                    <input type="submit" id="register-submit" class="register-button"></input>
+                    <button id="register-back" class="register-button">Go back</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <div id="load-wrapper">
         <div id="loader">
             <span class="ringFour"></span>
@@ -447,42 +485,6 @@
                             publicity and organising workshops.
                         </p>
                         <div id="open-register" class="register-button">Register</div>
-                    </div>
-                    <div id="register">
-                        <h2>REGISTRATION</h2>
-                        <form id="register-form" action="">
-                            <label>Name</label>
-                            <input type="text" name="name" id="register-name">
-                            <label>College</label>
-                            <select id="register-college">
-                                <option value="select" disabled selected>Select</option>
-                            </select>
-                            <label>Gender</label>
-                            <div id="gender-div">
-                                <div>
-                                    <input type="radio" id="male" class="gender-option" name="gender" value="M" checked>
-                                    Male
-                                </div>
-                                <div>
-                                    <input type="radio" id="female" class="gender-option" name="gender" value="F">
-                                    Female
-                                </div>
-                                <div>
-                                    <input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
-                                </div>
-                            </div>
-                            <label>City</label>
-                            <input type="text" name="city" id="register-city">
-                            <label>Email</label>
-                            <input type="email" name="email" id="register-email">
-                            <label>Phone</label>
-                            <input type="text" name="phone" id="register-phone">
-                            <label id="error"></label>
-                            <div id="register-buttons">
-                                <button id="register-back" class="register-button">Go back</button>
-                                <input type="submit" id="register-submit" class="register-button"></input>
-                            </div>
-                        </form>
                     </div>
                 </div>
 

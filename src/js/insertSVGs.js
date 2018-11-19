@@ -1,5 +1,6 @@
 import hamburgerSVG from '../images/hamburger.svg'
 import closeSVG from '../images/close.svg';
+import closeSVG1 from '../images/close-reg.svg';
 import scrollIconSVG from '../images/scroll-icon.svg';
 import socialSVG from '../images/social-icons.svg';
 import apogeeLogoSVG from '../images/apogee-logo.svg';
@@ -10,6 +11,9 @@ navContent.insertAdjacentHTML('beforeend', hamburgerSVG);
 
 const closeDiv = document.getElementById('menu-cross');
 closeDiv.insertAdjacentHTML('beforeend', closeSVG);
+
+const closeDiv1 = document.getElementById('register-cross');
+closeDiv1.insertAdjacentHTML('beforeend', closeSVG1);
 
 const scrollIconDiv = document.getElementById('scroll-icon');
 scrollIconDiv.insertAdjacentHTML('beforeend', scrollIconSVG);

@@ -17,32 +17,60 @@
     color: #F1356B;
 }
 
-#register {
+#register-cross-svg {
+    position: fixed;
+    top: 30px;
+    right: 35px;
+    cursor: pointer;
+    width: 22px;
+    z-index: 99999;
     display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+}
+
+#register {
+    // display: none;
+    background: #14181F;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    transition: opacity 0.3s ease-in-out, top 0.5s cubic-bezier(.55,.01,.17,1);
+
+    #register-content {
+        height: 100vh;
+        overflow-y: auto;
+        padding: 120px 10vw 0 10vw;
+    }
 
     h2 {
-        font-size: 4em;
+        font-size: 3em;
+        font-family: 'Futurist';
+        color: #57F6B1;
     }
     #register-form {
         display: flex;
         flex-direction: column;
         font-family: 'Overpass';
-        
+        padding-left: 10px;
+        margin-top: 15px;
+
         label {
             font-size: 20px;
+            color: #729BE1;
         }
 
         input, select {
             background: none;
             outline: none;
             border: none;
-            border-bottom: 2px solid #fff;
+            border-bottom: 1.5px solid #ffffff80;
             font-size: 18px;
             padding: 5px 0;
             color: #fff;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             transition: all 0.1s ease-in-out;
         }
 
@@ -56,25 +84,25 @@
 
         .register-button {
             padding: 10px 15px;
-            border: 2px solid #fff;
+            border: 2px solid #436AFF;
             text-transform: uppercase;
             width: 200px;
             cursor: pointer;
             margin-right: 20px;
             font-family: 'Overpass';
             font-size: 20px;
-            color: #fff;
+            color: #57F6B1;
             background: none;
             transition: all 0.1s ease-in-out;
             text-align: center;
         }
         .register-button:hover {
-            background: #fff;
-            color: #F1356B;
+            background: #436AFF;
+            color: #fff;
         }
 
         #error {
-            color: #000;
+            color: red;
         }
 
         #gender-div {
@@ -97,16 +125,26 @@
 
 @media all and (max-width: 1000px) {
     #register {
+        #register-content {
+            padding: 100px 10vw 0 10vw;
+        }
         h2 {
-            font-size: 1.8em;
+            font-size: 1.3em;
             margin-bottom: 10px;
         }
+        #register-cross-svg {
+            top: 25px;
+            right: 20px;
+        }
         #register-form {
+            #register-buttons {
+                justify-content: space-between;
+            }
             .register-button {
-                padding: 5px 8px;
+                padding: 3px 5px;
                 border: 2px solid #fff;
                 text-transform: uppercase;
-                width: 120px;
+                width: 100px;
                 cursor: pointer;
                 margin-right: 10px;
                 font-family: 'Overpass';

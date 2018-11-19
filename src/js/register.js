@@ -14,25 +14,37 @@ function init() {
 
     function openReg() {
         displayError('');
-        document.getElementById("campus-ambassador-content").style.opacity = 0;
-        setTimeout(function () {
-            document.getElementById("campus-ambassador-content").style.display = "none";
-            document.getElementById("register").style.display = "block";
-        }, 270);
-        setTimeout(function () {
-            document.getElementById("register").style.opacity = 1;
+        document.getElementById("register").style.top = 0;
+        document.getElementById("nav-content").style.opacity = 0;
+        setTimeout(function(){
+            document.getElementById("register-cross-svg").style.display = 'block';
+            document.getElementById("nav-content").style.display = 'none';
         }, 300);
+        inlineSvgColorHandler("apogee-logo-svg", "#fff");
+        // document.getElementById("campus-ambassador-content").style.opacity = 0;
+        // setTimeout(function () {
+        //     document.getElementById("campus-ambassador-content").style.display = "none";
+        //     document.getElementById("register").style.display = "block";
+        // }, 270);
+        // setTimeout(function () {
+        //     document.getElementById("register").style.opacity = 1;
+        // }, 300);
     }
 
     function closeReg() {
-        document.getElementById("register").style.opacity = 0;
-        setTimeout(function () {
-            document.getElementById("register").style.display = "none";
-            document.getElementById("campus-ambassador-content").style.display = "block";
-        }, 270);
-        setTimeout(function () {
-            document.getElementById("campus-ambassador-content").style.opacity = 1;
-        }, 300);
+        document.getElementById("register").style.top = '100%';
+        document.getElementById("nav-content").style.display = 'flex';
+        setTimeout(function(){
+            document.getElementById("nav-content").style.opacity = 1;
+            document.getElementById("register-cross-svg").style.display = 'none';
+        }, 100);
+        // setTimeout(function () {
+        //     document.getElementById("register").style.display = "none";
+        //     document.getElementById("campus-ambassador-content").style.display = "block";
+        // }, 270);
+        // setTimeout(function () {
+        //     document.getElementById("campus-ambassador-content").style.opacity = 1;
+        // }, 300);
     }
 
     document.getElementById("register-form").onsubmit = function (e) {
@@ -87,10 +99,7 @@ function init() {
                     if(response.status === 0) {
                         displayError('Email already exists!');
                     } else if ( response.status === 1) {
-                        let button = document.getElementById('register-submit');
-                        button.innerHTML = "Complete";
-                        button.disabled = true;
-                        setTimeout(closeReg, 500);
+                        document.getElementById("register-form").innerHTML = "<label>Your registration is complete.</label>";
                     } else {
                         displayError('Some error occurred while connecting to server');
                     }

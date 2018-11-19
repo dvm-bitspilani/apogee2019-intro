@@ -1,6 +1,6 @@
 window.onload = function () {
     document.getElementById("load-wrapper").style.opacity = 0;
-    setTimeout(function(){document.getElementById("load-wrapper").style.display = "none"}, 400)
+    setTimeout(function () { document.getElementById("load-wrapper").style.display = "none" }, 400)
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // change background
         divs.map(div => {
             if (document.getElementById(div.id).getBoundingClientRect().top >= 0 && document.getElementById(div.id).getBoundingClientRect().top / viewportHeight < 0.7) {
-                if(div.name!=='contact')
+                if (div.name !== 'contact')
                     document.getElementById("main-image-container").style.backgroundColor = div.background;
 
                 // change font color for navbar and footer
@@ -116,9 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 let opacity = 0.6;
-                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
-                if(div.name === 'contact' || div.name === 'landing') {
+                if (div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
                     document.getElementById('particles-js').style.opacity = opacity;
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 inlineSvgColorHandler("apogee-logo-svg", div.fontColor);
             }
             if (document.getElementById(div.id).getBoundingClientRect().top <= 0 && document.getElementById(div.id).getBoundingClientRect().bottom > 0 && Math.abs(document.getElementById(div.id).getBoundingClientRect().bottom / viewportHeight) > 0.7) {
-                if(div.name!=='contact')
+                if (div.name !== 'contact')
                     document.getElementById("main-image-container").style.backgroundColor = div.background;
 
                 // change font color for navbar and footer
@@ -153,9 +153,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 let opacity = 0.6;
-                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
-                if(div.name === 'contact' || div.name === 'landing') {
+                if (div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
                     document.getElementById('particles-js').style.opacity = opacity;
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
-                if(div.name==='contact')
+                if (div.name === 'contact')
                     document.getElementById("scrollMore").style.opacity = 0;
                 else
                     document.getElementById("scrollMore").style.opacity = 0.5;
@@ -196,9 +196,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 let opacity = 0.6;
-                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
-                if(div.name === 'contact' || div.name === 'landing') {
+                if (div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
                     document.getElementById('particles-js').style.opacity = opacity;
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // change font color for navbar and footer
                 document.getElementById("navbar").style.color = div.fontColor;
                 document.getElementById("footer").style.color = div.fontColor;
-                if(div.name==='contact')
+                if (div.name === 'contact')
                     document.getElementById("scrollMore").style.opacity = 0;
                 else
                     document.getElementById("scrollMore").style.opacity = 0.5;
@@ -234,14 +234,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 let opacity = 0.6;
-                if(Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
+                if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
-                if(div.name === 'contact' || div.name === 'landing') {
+                if (div.name === 'contact' || div.name === 'landing') {
                     document.getElementById('particles-js').style.opacity = 0;
                 } else {
                     document.getElementById('particles-js').style.opacity = opacity;
                 }
-                
+
                 // change color for menu
                 document.getElementById("menu").style.color = div.fontColor;
                 document.getElementById("menu").style.background = div.background;
@@ -279,6 +279,16 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
+    // on register cross click
+    document.getElementById("register-cross-svg").onclick = function () {
+        document.getElementById("register").style.top = '100%';
+        document.getElementById("nav-content").style.display = 'flex';
+        setTimeout(function(){
+            document.getElementById("nav-content").style.opacity = 1;
+            document.getElementById("register-cross-svg").style.display = 'none';
+        }, 100);
+    };
+
     // on menu item span click
     let items = document.getElementsByClassName("menu-item");
     for (let i = 0; i < items.length; i++) {
@@ -293,11 +303,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // svg color change handler
-    function svgColorHandler(svgId, color) {
-        document.getElementById(svgId).getSVGDocument().getElementsByTagName("g")[0].style.fill = color;
-    }
-    function inlineSvgColorHandler(svgId, color) {
-        document.getElementById(svgId).getElementsByTagName("g")[0].style.fill = color;
-    }
 });
+
+// svg color change handler
+function svgColorHandler(svgId, color) {
+    document.getElementById(svgId).getSVGDocument().getElementsByTagName("g")[0].style.fill = color;
+}
+function inlineSvgColorHandler(svgId, color) {
+    document.getElementById(svgId).getElementsByTagName("g")[0].style.fill = color;
+}
