@@ -4,14 +4,20 @@
 
   #campus-ambassador-content {
     transition: opacity 0.3s ease-in-out;
+    p {
+      line-height: inherit;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    #ambassador-btns {
+      display: flex;
+    }
   }
 
   h2 {
-    font-size: 4em;
-  }
-
-  #open-register {
-    margin-top: 20px;
+    font-size: 3.5em;
+    margin-bottom: 20px;
   }
 }
 
