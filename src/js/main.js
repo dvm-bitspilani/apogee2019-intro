@@ -305,6 +305,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // prevent vertical scroll when on slider
+    document.getElementsByClassName("carousel-events")[0].addEventListener("touchmove", function (e) {
+        e.preventDefault();
+    });
+    document.getElementsByClassName("carousel-pastsponsors")[0].addEventListener("touchmove", function (e) {
+        e.preventDefault();
+    });
+    document.getElementsByClassName("carousel-speaker")[0].addEventListener("touchmove", function (e) {
+        e.preventDefault();
+    });
+    document.getElementsByClassName("carousel-contact")[0].addEventListener("touchmove", function (e) {
+        e.preventDefault();
+    });
 });
 
 // svg color change handler

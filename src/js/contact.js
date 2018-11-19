@@ -6,8 +6,7 @@ if (window.innerWidth <= 600) {
     '.carousel-contact', {
       wrapAround: true,
       draggable: true,
-      pageDots: false,
-      freeScroll: true
+      pageDots: false
     }
   );
   

@@ -4,8 +4,7 @@ const flkty3 = new flickity(
   '.carousel-pastsponsors', {
     wrapAround: true,
     draggable: true,
-    pageDots: false,
-    freeScroll: true
+    pageDots: false
   }
 );
 
