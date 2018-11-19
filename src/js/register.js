@@ -2,6 +2,10 @@ function init() {
     const BASE_URL = "http://test.bits-apogee.org/2019";
     setColleges();
 
+    document.getElementById("registrations-menu-link").addEventListener("click", function () {
+        openReg();
+    })
+
     document.getElementById("open-register").addEventListener("click", function (e) {
         e.preventDefault();
         openReg();
@@ -21,14 +25,6 @@ function init() {
             document.getElementById("nav-content").style.display = 'none';
         }, 300);
         inlineSvgColorHandler("apogee-logo-svg", "#fff");
-        // document.getElementById("campus-ambassador-content").style.opacity = 0;
-        // setTimeout(function () {
-        //     document.getElementById("campus-ambassador-content").style.display = "none";
-        //     document.getElementById("register").style.display = "block";
-        // }, 270);
-        // setTimeout(function () {
-        //     document.getElementById("register").style.opacity = 1;
-        // }, 300);
     }
 
     function closeReg() {
@@ -38,13 +34,8 @@ function init() {
             document.getElementById("nav-content").style.opacity = 1;
             document.getElementById("register-cross-svg").style.display = 'none';
         }, 100);
-        // setTimeout(function () {
-        //     document.getElementById("register").style.display = "none";
-        //     document.getElementById("campus-ambassador-content").style.display = "block";
-        // }, 270);
-        // setTimeout(function () {
-        //     document.getElementById("campus-ambassador-content").style.opacity = 1;
-        // }, 300);
+        console.log('Color', window.logoColor);
+        inlineSvgColorHandler("apogee-logo-svg", window.logoColor);
     }
 
     document.getElementById("register-form").onsubmit = function (e) {
@@ -133,6 +124,11 @@ function init() {
                 })
             })
             .catch(err => console.log(err))
+    }
+
+    function inlineSvgColorHandler(svgId, color) {
+        window.logoColor = document.getElementById(svgId).getElementsByTagName("g")[0].style.fill;
+        document.getElementById(svgId).getElementsByTagName("g")[0].style.fill = color;
     }
 }
 

@@ -287,6 +287,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("nav-content").style.opacity = 1;
             document.getElementById("register-cross-svg").style.display = 'none';
         }, 100);
+        console.log('Color', window.logoColor);
+        inlineSvgColorHandler("apogee-logo-svg", window.logoColor);
     };
 
     // on menu item span click

@@ -2,6 +2,11 @@
   * {
     word-break: break-word;
   }
+  #menu {
+    span {
+      margin: 8px 0;
+    }
+  }
 
   .desktop-only {
     display: none;

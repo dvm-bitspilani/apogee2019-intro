@@ -124,6 +124,10 @@
 }
 
 @media all and (max-width: 1000px) {
+    #register-cross-svg {
+        top: 25px;
+        right: 20px;
+    }
     #register {
         #register-content {
             padding: 100px 10vw 0 10vw;
@@ -131,10 +135,6 @@
         h2 {
             font-size: 1.3em;
             margin-bottom: 10px;
-        }
-        #register-cross-svg {
-            top: 25px;
-            right: 20px;
         }
         #register-form {
             #register-buttons {
