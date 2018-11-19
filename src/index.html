@@ -9,9 +9,41 @@
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,700" rel="stylesheet">  -->
     <style>
+        #loader-slogan {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            animation-name: fadeOutText;
+            animation-duration: 0.3s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 0.7s;
+            text-align: center;
+            width: 100vw;
+        }
+        @keyframes fadeOutText {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
         #loader-label {
         position: relative;
         top: 66%;
+        animation-name: fadeInLoader;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.8s;
+        opacity: 0;
         }
         #loader-p {
         color: #d0cade;
@@ -45,6 +77,20 @@
         top: 40%;
         left: 50%;
         transform:scale(4,4);
+        opacity: 0;
+        animation-name: fadeInLoader;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0.8s;
+        }
+        @keyframes fadeInLoader {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .ball,
@@ -250,8 +296,8 @@
         </div>
         <div id="loader-label">
             <h2 id="loader-h2">APOGEE 2019</h2>
-            <p id="loader-p">The Reality Roulette</p>
         </div>
+        <span id="loader-slogan">APOGEE 2019</span>
     </div>
     <div id="menu">
         <div id="menu-cross"></div>
@@ -348,8 +394,8 @@
                         pronounce existence add you instantly say offending. Merry their far had widen was. Concerns no
                         in expenses raillery formerly.</p>
                     <div id="pep-btns">
-                        <a class="pep-register-btn register-button" href="https://bits-apogee.org/2019/portal/"
-                            target="_blank">Projects Portal</a>
+                        <a class="pep-register-btn register-button" href="https://bits-apogee.org/2019/portal/" target="_blank">Projects
+                            Portal</a>
                         <a class="pep-register-btn register-button" href="https://bits-apogee.org/paper-presentation/accounts/login/?next=/paper-presentation/portal/"
                             target="_blank">Paper Portal</a>
                     </div>
