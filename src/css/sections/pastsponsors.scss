@@ -33,7 +33,12 @@
     align-items: center;
     justify-content: center;
     width: 330px;
-    padding: 60px 0;
+	padding: 60px 0;
+	font-family: 'Overpass', sans-serif;;
+  }
+
+  .carousel-elem-pastsponsors.is-selected {
+	transform: scale(1.2);
   }
 
 	// @media (max-width: 1050px) {

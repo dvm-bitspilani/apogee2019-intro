@@ -10,6 +10,9 @@
 
 @media all and (max-width: 1000px) {
   #about-text-container {
+    justify-content: flex-start;
+    padding-top: 50px;
+    
     h2 {
       font-size: 3.4em;
     }

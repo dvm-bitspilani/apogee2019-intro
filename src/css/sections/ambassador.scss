@@ -12,6 +12,7 @@
 
     #ambassador-btns {
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -39,6 +40,8 @@
       font-size: 1.2em;
       line-height: 1.2;
       font-weight: 400;
+      max-height: 50vh;
+      overflow: auto;
     }
   }
 
