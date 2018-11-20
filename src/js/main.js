@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // prevent vertical scroll when on slider
+    // prevent vertical scroll when on slider and landing
     document.getElementsByClassName("carousel-events")[0].addEventListener("touchmove", function (e) {
         e.preventDefault();
     });
@@ -324,6 +324,9 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
     });
     document.getElementsByClassName("carousel-contact")[0].addEventListener("touchmove", function (e) {
+        e.preventDefault();
+    });
+    document.getElementById("load-wrapper").addEventListener("touchmove", function (e) {
         e.preventDefault();
     });
 
