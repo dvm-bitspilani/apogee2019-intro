@@ -119,9 +119,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
                 if (div.name === 'contact' || div.name === 'landing') {
-                    document.getElementById('particles-js').style.opacity = 0;
+                    document.getElementById('particles-js-mobile').style.opacity = 0;
+                    document.getElementById('particles-js-desktop').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = opacity;
+                    document.getElementById('particles-js-mobile').style.opacity = opacity;
+                    document.getElementById('particles-js-desktop').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -156,9 +158,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
                 if (div.name === 'contact' || div.name === 'landing') {
-                    document.getElementById('particles-js').style.opacity = 0;
+                    document.getElementById('particles-js-mobile').style.opacity = 0;
+                    document.getElementById('particles-js-desktop').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = opacity;
+                    document.getElementById('particles-js-mobile').style.opacity = opacity;
+                    document.getElementById('particles-js-desktop').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -199,9 +203,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
                 if (div.name === 'contact' || div.name === 'landing') {
-                    document.getElementById('particles-js').style.opacity = 0;
+                    document.getElementById('particles-js-mobile').style.opacity = 0;
+                    document.getElementById('particles-js-desktop').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = opacity;
+                    document.getElementById('particles-js-mobile').style.opacity = opacity;
+                    document.getElementById('particles-js-desktop').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -237,9 +243,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <= MOBILE_WIDTH)
                     opacity = 0.3;
                 if (div.name === 'contact' || div.name === 'landing') {
-                    document.getElementById('particles-js').style.opacity = 0;
+                    document.getElementById('particles-js-mobile').style.opacity = 0;
+                    document.getElementById('particles-js-desktop').style.opacity = 0;
                 } else {
-                    document.getElementById('particles-js').style.opacity = opacity;
+                    document.getElementById('particles-js-mobile').style.opacity = opacity;
+                    document.getElementById('particles-js-desktop').style.opacity = opacity;
                 }
 
                 // change color for menu
@@ -283,7 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("register-cross-svg").onclick = function () {
         document.getElementById("register").style.top = '100%';
         document.getElementById("nav-content").style.display = 'flex';
-        setTimeout(function(){
+        setTimeout(function () {
             document.getElementById("nav-content").style.opacity = 1;
             document.getElementById("register-cross-svg").style.display = 'none';
         }, 100);
@@ -324,7 +332,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("twitter-icon").addEventListener("click", () => openLink("https://twitter.com/bitsapogee?lang=en"))
     document.getElementById("instagram-icon").addEventListener("click", () => openLink("https://www.instagram.com/bitsapogee/?hl=en"))
 
-    function openLink (url) {
+    function openLink(url) {
         var win = window.open(url, '_blank');
         win.focus();
     }
