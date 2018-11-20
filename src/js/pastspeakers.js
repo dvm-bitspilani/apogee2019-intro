@@ -53,6 +53,7 @@ pastSpeakers.forEach(
     speakerImg.classList.add("pastspeakers-img");
     speakerImg.style.background = `url(${speaker.img})`;
     speakerImg.style.backgroundSize = "cover";
+    speakerImg.style.backgroundPosition = "center";
 
     const speakerName = document.createElement("div");
     speakerName.classList.add("pastspeakers-name");
