@@ -2,6 +2,8 @@ function init() {
     const BASE_URL = "https://bits-apogee.org/2019";
     setColleges();
 
+    let isRegisteredOnce = false;
+
     document.getElementById("registrations-menu-link").addEventListener("click", function () {
         openReg();
     })
@@ -21,7 +23,9 @@ function init() {
     });
 
     function openReg() {
-        displayError('');
+        if (!isRegisteredOnce) {
+            displayError('');
+        }
         document.getElementById("register").style.top = 0;
         document.getElementById("nav-content").style.opacity = 0;
         setTimeout(function(){
@@ -95,6 +99,7 @@ function init() {
                         displayError('Email already exists!');
                     } else if ( response.status === 1) {
                         document.getElementById("register-form").innerHTML = "<label>Your registration is complete.</label>";
+                        isRegisteredOnce = true;
                     } else {
                         displayError('Some error occurred while connecting to server');
                     }
