@@ -12,7 +12,12 @@
 
     #ambassador-btns {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
+
+      #open-register {
+        margin-top: 20px;
+      }
     }
   }
 
