@@ -5,6 +5,10 @@ function init() {
     document.getElementById("registrations-menu-link").addEventListener("click", function () {
         openReg();
     })
+    
+    document.getElementById("registrations-nav-link").addEventListener("click", function () {
+        openReg();
+    })
 
     document.getElementById("open-register").addEventListener("click", function (e) {
         e.preventDefault();
