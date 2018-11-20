@@ -1,6 +1,6 @@
 import flickity from 'flickity';
 
-if (window.innerWidth <= 600) {
+// if (window.innerWidth <= 600) {
   console.log("asdf");
   let flkty4 = new flickity(
     '.carousel-contact', {
@@ -17,4 +17,4 @@ if (window.innerWidth <= 600) {
     flkty4.reloadCells();
     flkty4.next();
   }, 500);
-}
+// }
