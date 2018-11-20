@@ -24,7 +24,7 @@ const events = [
   },
   {
     name: "AIC",
-    img: require("../imgs/events/aic.png")
+    img: require("../imgs/events/aic.jpg")
   }
 ];
 
