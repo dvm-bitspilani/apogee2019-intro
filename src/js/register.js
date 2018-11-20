@@ -4,6 +4,19 @@ function init() {
 
     let isRegisteredOnce = false;
 
+    document.getElementById("register-again").onclick = function () {
+        isRegisteredOnce = false;
+        displayError('');
+        document.getElementById("register-form-complete").style.display = "none";
+        document.getElementById('register-name').value = '';
+        document.getElementById("register-college").value = 'select';
+        document.getElementById('register-email').value = '';
+        document.getElementById('register-phone').value = '';
+        document.getElementById('register-city').value = '';
+        document.getElementsByClassName('gender-option')[0].checked = true;
+        document.getElementById("register-form-content").style.display = "flex";
+    }
+
     document.getElementById("registrations-menu-link").addEventListener("click", function () {
         openReg();
     })
@@ -98,7 +111,11 @@ function init() {
                     if(response.status === 0) {
                         displayError('Email already exists!');
                     } else if ( response.status === 1) {
-                        document.getElementById("register-form").innerHTML = "<label>Your registration is complete.</label>";
+                        displayError('');
+                        setTimeout(function () {
+                            document.getElementById("register-form-content").style.display = "none";
+                            document.getElementById("register-form-complete").style.display = "flex";
+                        }, 100);
                         isRegisteredOnce = true;
                     } else {
                         displayError('Some error occurred while connecting to server');

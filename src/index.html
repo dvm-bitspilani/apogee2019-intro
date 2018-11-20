@@ -261,36 +261,42 @@
         <div id="register-content">
             <h2>REGISTRATION</h2>
             <form id="register-form" action="">
-                <label>Name</label>
-                <input type="text" name="name" id="register-name">
-                <label>College</label>
-                <select id="register-college">
-                    <option value="select" disabled selected>Select</option>
-                </select>
-                <label>Gender</label>
-                <div id="gender-div">
-                    <div>
-                        <input type="radio" id="male" class="gender-option" name="gender" value="M" checked>
-                        Male
+                <div id="register-form-content">
+                    <label>Name</label>
+                    <input type="text" name="name" id="register-name">
+                    <label>College</label>
+                    <select id="register-college">
+                        <option value="select" disabled selected>Select</option>
+                    </select>
+                    <label>Gender</label>
+                    <div id="gender-div">
+                        <div>
+                            <input type="radio" id="male" class="gender-option" name="gender" value="M" checked>
+                            Male
+                        </div>
+                        <div>
+                            <input type="radio" id="female" class="gender-option" name="gender" value="F">
+                            Female
+                        </div>
+                        <div>
+                            <input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" id="female" class="gender-option" name="gender" value="F">
-                        Female
-                    </div>
-                    <div>
-                        <input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
+                    <label>City</label>
+                    <input type="text" name="city" id="register-city">
+                    <label>Email</label>
+                    <input type="email" name="email" id="register-email">
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="register-phone">
+                    <label id="error"></label>
+                    <div id="register-buttons">
+                        <input type="submit" id="register-submit" class="register-button" value="Register">
+                        <button id="register-back" class="register-button">Go back</button>
                     </div>
                 </div>
-                <label>City</label>
-                <input type="text" name="city" id="register-city">
-                <label>Email</label>
-                <input type="email" name="email" id="register-email">
-                <label>Phone</label>
-                <input type="text" name="phone" id="register-phone">
-                <label id="error"></label>
-                <div id="register-buttons">
-                    <input type="submit" id="register-submit" class="register-button" value="Register">
-                    <button id="register-back" class="register-button">Go back</button>
+                <div id="register-form-complete">
+                        <label>Your registration is complete.</label><br>
+                        <button id='register-again' class='register-button'>Register again</button>
                 </div>
             </form>
         </div>
