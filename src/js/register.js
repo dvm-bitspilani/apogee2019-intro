@@ -1,5 +1,5 @@
 function init() {
-    const BASE_URL = "http://test.bits-apogee.org/2019";
+    const BASE_URL = "https://bits-apogee.org/2019";
     setColleges();
 
     document.getElementById("registrations-menu-link").addEventListener("click", function () {
