@@ -85,6 +85,10 @@
             transition: all 0.1s ease-in-out;
         }
 
+        select {
+            color: #fff !important;
+        }
+
         input:active, input:focus {
             background: #00000010;
         }
