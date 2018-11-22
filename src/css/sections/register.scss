@@ -85,8 +85,8 @@
             transition: all 0.1s ease-in-out;
         }
 
-        select {
-            color: #fff !important;
+        select option {
+            color: initial !important;
         }
 
         input:active, input:focus {
