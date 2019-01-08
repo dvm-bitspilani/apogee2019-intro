@@ -32,6 +32,7 @@ function init() {
     ambassador: {
       id: "ambassador-image-container",
       menuLink: "ambassador-menu-link",
+      link: "ambassador-link",
       name: "ambassador"
     },
     teaser: {
@@ -44,7 +45,7 @@ function init() {
       link: "contact-link",
       menuLink: "contact-menu-link",
       name: "contact"
-    }
+    },
   }
 
   function goToPage(pageName) {
