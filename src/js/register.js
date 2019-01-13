@@ -158,7 +158,7 @@ function init() {
 
                 function lazyRenderClgs (clgs, index) {
                   let count = 0;
-                  for (; index < clgs.length && count < 250; index++, count++) {
+                  for (; index < clgs.length && count < 500; index++, count++) {
                     let college = clgs[index];
 
                     let opt = document.createElement('option');
@@ -168,10 +168,10 @@ function init() {
                   }
                   if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 1000);
                   else {
-                    console.log(index);
+                    // console.log(index);
                     regClgLabel.innerHTML = "Select College";
                   }
-                  console.log('a');
+                  // console.log('a');
                 }
                 lazyRenderClgs(colleges, 0);
             })
