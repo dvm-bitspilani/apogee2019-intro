@@ -153,7 +153,7 @@ function init() {
                 // })
 
                 let colleges = data.data;
-
+                let regClgDropDown = document.getElementById('register-college');
                 function lazyRenderClgs (clgs, index) {
                   let count = 0;
                   for (; index < clgs.length && count < 50; index++, count++) {
@@ -162,10 +162,11 @@ function init() {
                     let opt = document.createElement('option');
                     opt.setAttribute('value', college.id);
                     opt.innerHTML = college.name;
-                    document.getElementById('register-college').appendChild(opt);
+                    regClgDropDown.appendChild(opt);
                   }
-                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 500);
-                  // else { console.log(index) }
+                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 1000);
+                  else { console.log(index) }
+                  console.log('a');
                 }
                 lazyRenderClgs(colleges, 0);
             })
