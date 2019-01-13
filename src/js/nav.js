@@ -2,6 +2,11 @@ import jump from 'jump.js';
 function init() {
 
   let slideSections = {
+    home: {
+      id: "landing-text-container",
+      menuLink: "home-menu-link",
+      name: "home"
+    },
     about: {
       id: "about-image-container",
       link: "about-link",
