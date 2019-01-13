@@ -154,9 +154,11 @@ function init() {
 
                 let colleges = data.data;
                 let regClgDropDown = document.getElementById('register-college');
+                let regClgLabel = document.getElementById('reg-clg-label');
+
                 function lazyRenderClgs (clgs, index) {
                   let count = 0;
-                  for (; index < clgs.length && count < 50; index++, count++) {
+                  for (; index < clgs.length && count < 250; index++, count++) {
                     let college = clgs[index];
 
                     let opt = document.createElement('option');
@@ -164,8 +166,12 @@ function init() {
                     opt.innerHTML = college.name;
                     regClgDropDown.appendChild(opt);
                   }
-                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 500);
-                  // else { console.log(index) }
+                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 1000);
+                  else {
+                    console.log(index);
+                    regClgLabel.innerHTML = "Select College";
+                  }
+                  console.log('a');
                 }
                 lazyRenderClgs(colleges, 0);
             })
