@@ -164,9 +164,8 @@ function init() {
                     opt.innerHTML = college.name;
                     regClgDropDown.appendChild(opt);
                   }
-                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 1000);
-                  else { console.log(index) }
-                  console.log('a');
+                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 500);
+                  // else { console.log(index) }
                 }
                 lazyRenderClgs(colleges, 0);
             })
