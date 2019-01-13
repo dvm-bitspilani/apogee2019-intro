@@ -145,9 +145,29 @@ function init() {
         fetch(BASE_URL + '/registrations/get_college')
             .then((resp) => resp.json())
             .then(function (data) {
-                data.data.map(college => {
-                    document.getElementById("register-college").innerHTML += `<option value=${college.id}>${college.name}</option>`;
-                })
+                // console.log(data);
+                // let count = 0;
+                // data.data.map(college => {
+                //     if (count == 100) 
+                //     document.getElementById("register-college").innerHTML += `<option value=${college.id}>${college.name}</option>`;
+                // })
+
+                let colleges = data.data;
+
+                function lazyRenderClgs (clgs, index) {
+                  let count = 0;
+                  for (; index < clgs.length && count < 50; index++, count++) {
+                    let college = clgs[index];
+
+                    let opt = document.createElement('option');
+                    opt.setAttribute('value', college.id);
+                    opt.innerHTML = college.name;
+                    document.getElementById('register-college').appendChild(opt);
+                  }
+                  if (index != clgs.length) setTimeout(() => lazyRenderClgs(clgs, index), 500);
+                  // else { console.log(index) }
+                }
+                lazyRenderClgs(colleges, 0);
             })
             .catch(err => console.log(err))
     }
